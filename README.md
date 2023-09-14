@@ -7,7 +7,7 @@ You can also find a list of favorites, where you will find those that we have pr
 
 #IMG 
 
-⚛️​The technologies used⚛️​
+⚛️💻​ ​The technologies used
 
 🌍Front-end🌍:
 <ul><li>JS</li>  
@@ -47,7 +47,7 @@ Tambien se podrá encontrar una lista de favoritos, donde se encontrarán aquell
 #IMG 
 
 
-Las tecnologías utilizadas:
+⚛️💻 Las tecnologías utilizadas:
 
 🌍Front-end🌍:
 <ul><li>JS</li>  

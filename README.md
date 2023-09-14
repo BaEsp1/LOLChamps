@@ -7,9 +7,9 @@ You can also find a list of favorites, where you will find those that we have pr
 
 #IMG 
 
-🔷The technologies used:
+⚛️​The technologies used⚛️​
 
-Front-end:
+🌍Front-end🌍:
 <ul><li>JS</li>  
 <li>​CSS</li>
 <li>​HTML</li>
@@ -17,13 +17,13 @@ Front-end:
 <li>​Redux</li>
 </ul>
 <br></br>
-Back-end:
+​🌎​​Back-end​🌎:
 <ul>
   <li>​Express</li>
   <li>​Sequelize</li>
 </ul>
 <br></br>
-BD:
+🌏BD🌏:
 <ul>
 <li>SQL</li>
 <li>PostgreSQL</li>
@@ -35,7 +35,6 @@ Deploy ⏩Vercel
 <ul> ⏩ Baesp01 </ul>
 <li>Port-foil:</li>
 <li>Linkedind:</li>
-
 
 
 # Descripcion - (Español)
@@ -50,21 +49,24 @@ Tambien se podrá encontrar una lista de favoritos, donde se encontrarán aquell
 
 Las tecnologías utilizadas:
 
-Front-end:
-🔷​React
-🔷​Redux
-🔷​JS
-🔷​CSS
-🔷​HTML
-
-
-Back-end:
-🔶​Express
-​🔶​Sequelize
-
-BD:
-🔴SQL
-🔴PostgreSQL
-
-Deploy:
-⏩Vercel
+🌍Front-end🌍:
+<ul><li>JS</li>  
+<li>​CSS</li>
+<li>​HTML</li>
+<li>​React</li>
+<li>​Redux</li>
+</ul>
+<br></br>
+​🌎​​Back-end​🌎:
+<ul>
+  <li>​Express</li>
+  <li>​Sequelize</li>
+</ul>
+<br></br>
+🌏BD🌏:
+<ul>
+<li>SQL</li>
+<li>PostgreSQL</li>
+</ul>
+<br></br>
+Deploy ⏩Vercel

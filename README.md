@@ -7,25 +7,31 @@ You can also find a list of favorites, where you will find those that we have pr
 
 #IMG 
 
-The technologies used:
+🔷The technologies used:
 
 Front-end:
-<ul>🔷​React </ul>
-<ul>🔷​Redux </ul>
-<ul>🔷​JS </ul>  
-<ul>🔷​CSS</ul>
-<ul>🔷​HTML</ul>  
+<ul><li>JS</li>  
+<li>​CSS</li>
+<li>​HTML</li>
+<li>​React</li>
+<li>​Redux</li>
+</ul>
 
+<br></br>
 Back-end:
-<ul>🔶​Express</ul>
-​<ul>🔶​Sequelize</ul>
+<ul>
+  <li>​Express</li>
+  <li>​Sequelize</li>
+</ul>
+<br></br>
 
 BD:
-<ul>🔴SQL</ul>
-<ul>🔴PostgreSQL</ul>
-
-Deploy:
-⏩Vercel
+<ul>
+<li>SQL</li>
+<li>PostgreSQL</li>
+</ul>
+<br></br>
+Deploy ⏩Vercel
 
 # Developed:
 

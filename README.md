@@ -10,20 +10,19 @@ You can also find a list of favorites, where you will find those that we have pr
 The technologies used:
 
 Front-end:
-<li> 🔷​React </li>
-<li> 🔷​Redux </li>
-<ul> 🔷​JS </ul>  
-    🔷​CSS
-    🔷​HTML
-
+<ul>🔷​React </ul>
+<ul>🔷​Redux </ul>
+<ul>🔷​JS </ul>  
+<ul>🔷​CSS</ul>
+<ul>🔷​HTML</ul>  
 
 Back-end:
-🔶​Express
-​🔶​Sequelize
+<ul>🔶​Express</ul>
+​<ul>🔶​Sequelize</ul>
 
 BD:
-🔴SQL
-🔴PostgreSQL
+<ul>🔴SQL</ul>
+<ul>🔴PostgreSQL</ul>
 
 Deploy:
 ⏩Vercel

@@ -10,9 +10,9 @@ You can also find a list of favorites, where you will find those that we have pr
 The technologies used:
 
 Front-end:
-    🔷​React
-    🔷​Redux
-    🔷​JS
+<li> 🔷​React </li>
+<li> 🔷​Redux </li>
+<ul> 🔷​JS </ul>  
     🔷​CSS
     🔷​HTML
 

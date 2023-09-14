@@ -11,10 +11,15 @@ The technologies used:
 
 Front-end:
  🔷​React
+
  🔷​Redux
+
  🔷​JS
+
  🔷​CSS
+
  🔷​HTML
+ 
 
 Back-end :
 ​ 🔶​Express

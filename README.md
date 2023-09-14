@@ -10,27 +10,23 @@ You can also find a list of favorites, where you will find those that we have pr
 The technologies used:
 
 Front-end:
- 🔷​React
+🔷​React
+🔷​Redux
+🔷​JS
+🔷​CSS
+🔷​HTML
 
- 🔷​Redux
 
- 🔷​JS
-
- 🔷​CSS
-
- 🔷​HTML
- 
-
-Back-end :
-​ 🔶​Express
- ​🔶​Sequelize
+Back-end:
+🔶​Express
+​🔶​Sequelize
 
 BD:
- 🔴SQL
- 🔴PostgreSQL
+🔴SQL
+🔴PostgreSQL
 
-Deploy: 
- ⏩Vercel
+Deploy:
+⏩Vercel
 
 # Developed:
 
@@ -52,19 +48,20 @@ Tambien se podrá encontrar una lista de favoritos, donde se encontrarán aquell
 Las tecnologías utilizadas:
 
 Front-end:
- 🔷​React
- 🔷​Redux
- 🔷​JS
- 🔷​CSS
- 🔷​HTML
+🔷​React
+🔷​Redux
+🔷​JS
+🔷​CSS
+🔷​HTML
 
-Back-end :
-​ 🔶​Express
- ​🔶​Sequelize
+
+Back-end:
+🔶​Express
+​🔶​Sequelize
 
 BD:
- 🔴SQL
- 🔴PostgreSQL
+🔴SQL
+🔴PostgreSQL
 
-Deploy: 
- ⏩Vercel
+Deploy:
+⏩Vercel

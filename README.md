@@ -16,7 +16,6 @@ Front-end:
 <li>​React</li>
 <li>​Redux</li>
 </ul>
-
 <br></br>
 Back-end:
 <ul>
@@ -24,7 +23,6 @@ Back-end:
   <li>​Sequelize</li>
 </ul>
 <br></br>
-
 BD:
 <ul>
 <li>SQL</li>
@@ -34,10 +32,10 @@ BD:
 Deploy ⏩Vercel
 
 # Developed:
+<ul> ⏩ Baesp01 </ul>
+<li>Port-foil:</li>
+<li>Linkedind:</li>
 
-Baesp01
-port-foil: 
-Linkedind:
 
 
 # Descripcion - (Español)

@@ -8,6 +8,10 @@
 }
 
 body {
-    background-color: #0b002a;
-    font-family: 'Beaufort';
+    font-family: 'Beaufort';    /* background-color: #0b002a; */
+    background: repeating-radial-gradient(circle,#150050, transparent 20%);
+    background-size: 1em 1em;
+    background-color: #000000;
+    opacity: 1
+
 }

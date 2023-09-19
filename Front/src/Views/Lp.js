@@ -1,5 +1,6 @@
 import Logo from "../lol/Logo.png"
 import "./Lp.css"
+import MyCarousel from "../Components/Carrousel/Lp-Carrousel"
 
 function Lp () {
 
@@ -7,10 +8,16 @@ function Lp () {
         <div className="Lp">
 
             <div className="Title">
-                <h1>Welcome to </h1>
+                <h1>WELCOME TO</h1>
                 <img src={Logo} alt="logo"/>
-                <h1> Guide page</h1>
+                <h1> GUIDE PAGE</h1>
             </div>
+            
+        <button className="Enter"><a href="/home">Enter</a></button>
+
+        <div className="Carousel">
+            <MyCarousel/>
+        </div>
 
         </div>
     )   

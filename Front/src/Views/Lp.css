@@ -1,12 +1,12 @@
-.Title img{
+/* .Title img{
     width: 20%;
     /* -webkit-box-shadow: -1px 0px 20px 14px rgba(184,184,184,1);
     -moz-box-shadow: -1px 0px 20px 14px rgba(184,184,184,1);
     box-shadow: -1px 0px 20px 14px rgb(184 184 184);
     border-radius: 100%;
-    background-color: rgb(184 184 184 / 102%); */
+    background-color: rgb(184 184 184 / 102%); 
     
-}
+} */
 
 .Title{
     display: flex;

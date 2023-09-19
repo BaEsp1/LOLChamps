@@ -1,8 +1,22 @@
+import Logo from "../Components/Logo";
+
+
 
 function Home () {
 
     return (
-        <h1>Hi ! Soy el Home!</h1>
+        <div className="Home">
+            <div className="Index">
+                <div className="IndexLeft">
+
+                </div>
+                <Logo />
+                <div className="IndexRight">
+
+                </div>
+            </div>
+
+        </div>
     )   
 }
 

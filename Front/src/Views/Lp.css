@@ -25,6 +25,7 @@
     width: 74%;
     border-radius: 0 50px 0 50px;
     margin: 10px auto 0px;
+    box-shadow:0 0 10px 3px rgb(17, 16, 18)
 }
 
 .Carousel img:hover{

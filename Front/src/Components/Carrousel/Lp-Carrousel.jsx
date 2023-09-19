@@ -9,6 +9,11 @@ import Ekko from "../../lol/Ekko.jpg";
 import Evelynn from "../../lol/Evelynn.jpg";
 import Jhin from "../../lol/Jhin.jpg";
 import Tristana from "../../lol/Tristana.jpg";
+import Amumu from "../../lol/Amumu.jpg";
+import Anivia from "../../lol/Anivia.jpg";
+import Lol from "../../lol/Lol.jpg";
+import Aurelio from "../../lol/Aurelio.jpg";
+import Annie from "../../lol/Annie.jpg";
 
 import React from 'react';
 import Slider from 'react-slick';
@@ -20,7 +25,7 @@ const MyCarousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Configura el número de imágenes a mostrar a la vez
+    slidesToShow: 3, 
     slidesToScroll: 3,
   };
 
@@ -51,12 +56,26 @@ const MyCarousel = () => {
         <img src={Evelynn} alt="Imagen 8" />
       </div>
       <div>
-        <img src={Jhin} alt="Imagen 3" />
+        <img src={Jhin} alt="Imagen 9" />
       </div>
       <div>
         <img src={Tristana} alt="Imagen 10" />
       </div>
-      {/* Agrega más elementos div para más imágenes */}
+      <div>
+        <img src={Amumu} alt="Imagen 11" />
+      </div>
+      <div>
+        <img src={Anivia} alt="Imagen 12" />
+      </div>
+      <div>
+        <img src={Annie} alt="Imagen 13" />
+      </div>
+      <div>
+        <img src={Aurelio} alt="Imagen 15" />
+      </div>
+      <div>
+        <img src={Lol} alt="Imagen 14" />
+      </div>
     </Slider>
   );
 };

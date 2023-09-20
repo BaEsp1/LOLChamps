@@ -30,10 +30,10 @@
 
 .Carousel img:hover{
     width: 76%;
-    -webkit-box-shadow: 5px 1px 16px 6px rgb(63 0 113);
-    -moz-box-shadow: 5px 1px 16px 6px rgb(63 0 113);
+    -webkit-box-shadow: 0 0 20px 3px rgb(159 85 219);
+    -moz-box-shadow: 0 0 20px 3px #9f55db;
     /* box-shadow: 5px 1px 16px 6px rgb(63 0 113); */
-    box-shadow:0 0 20px 3px rgb(159 85 219)
+    box-shadow:0 0 20px 3px rgb(159 85 219);
 }
 
 .Enter{

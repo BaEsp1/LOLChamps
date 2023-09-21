@@ -1,0 +1,35 @@
+
+.Index{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 8em;
+    background-color: #150050;
+}
+
+.Index a{
+    text-decoration: none;
+    color:#610094;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.Index a:hover{
+    text-shadow: 0px 0px 20px #9f55db;
+    /* color:white */
+    font-size: 124%;
+    color:#6f378d;
+}
+
+.IndexLeft{
+    width: 33%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.IndexRight{
+    display: flex;
+    justify-content: space-evenly;
+    width: 33%;
+}

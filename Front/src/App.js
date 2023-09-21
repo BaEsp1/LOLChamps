@@ -18,7 +18,7 @@ function App () {
         <Routes>
             <Route path='/' element={<Lp/>} name='Lp' key='Lp' />
             <Route path='/home' element={<Home/>} name='home' key='home' />
-            <Route path='/howPlay' element={<Hp/>} name='hp' key='hp' />
+            <Route path='/howToPlay' element={<Hp/>} name='hp' key='hp' />
             <Route path='/maps' element={<Maps/>} name='maps' key='maps' />
             <Route path='/maps/City' element={<City/>} name='city' key='city' />
             <Route path='/champs' element={<Champs/>} name='champs' key='champs' />

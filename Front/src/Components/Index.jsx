@@ -6,7 +6,7 @@ import "./Index.css" ;
 
 const index = () => {
 
-    const location = useLocation();
+    const location = useLocation;
 
     return(
     <div className="Index">

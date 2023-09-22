@@ -1,0 +1,56 @@
+
+.HowToPlay{
+    width: 83%;
+    margin: auto;
+    padding: 1%;
+}
+
+.HowToPlay h1{
+    text-align: justify;
+    /* margin-left: 3%; */
+}
+
+.HowToPlay h2{
+    text-align: justify;
+    margin-left: 2%;
+}
+
+.HowToPlay h3{
+    text-align: justify;
+    margin-left: 1%;
+}
+
+.HowToPlay li{
+    text-align: justify;
+    margin-left: 1%;
+}
+
+.HowToPlay p{
+    text-align: justify;
+
+}
+
+
+.HowToPlay img{
+    float:right;
+    margin: 0.5%;
+    border: solid black;
+    border-radius: 1em;
+    box-shadow:0 0 10px 3px rgb(17, 16, 18);
+    width: 15%;
+}
+
+.Init{
+    background-image: url("../lol/Banner3.png");
+    height: 10em;
+    width: 94.7%;
+    margin: auto;
+    border-radius: 1em;
+    border: solid black;
+    box-shadow:0 0 10px 3px rgb(17, 16, 18);
+}
+
+.gifi{
+    width: 19%;
+    margin-right: 2%;
+}

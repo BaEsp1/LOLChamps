@@ -1,4 +1,3 @@
-import Index from "../Components/Index";
 import Map from "../lol/Map_of_MOBA.png";
 import Map2 from "../lol/Maps2.jpg";
 import Map3 from "../lol/Maps3.png";
@@ -22,7 +21,7 @@ function Htp () {
 
     return (
         <div>
-        <Index/>
+
         <div className="HowToPlay">
 
         <h1>What is "League of Legends"?</h1>

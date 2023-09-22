@@ -7,12 +7,16 @@ import Maps from "./Views/Maps";
 import City from "./Views/City";
 import Champs from "./Views/Champs";
 import Detail from "./Views/Detail";
-import Favorites from "./Views/Favorite"
+import Favorites from "./Views/Favorite";
+import Index from "./Components/Index";
+import { useLocation } from "react-router-dom";
 
 function App () {
+    const location = useLocation();
 
     return (
         <div className='App'>
+            { location.pathname !== "/" && <Index/>}
         {/* {location.pathname !== "/" && <Nav onSearch={onSearch} logOut={LogOut}/>}  */}
         {/* Para el Nav no se vea en el Login */}
         <Routes>

@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import "./Home.css" ;
 import MyCarousel2 from "../Components/Carrousel/Home-Maps";
-import Index from "../Components/Index";
 
 function Home () {
 
@@ -14,8 +13,6 @@ function Home () {
 
     return (
         <div className="Home">
-
-               <Index/>
 
             <div className="Page">
 

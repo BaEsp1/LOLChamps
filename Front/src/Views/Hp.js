@@ -25,10 +25,10 @@ function Htp () {
         <Index/>
         <div className="HowToPlay">
 
-        <h1>LEAGUE OF LEGENDS</h1>
+        <h1>What is "League of Legends"?</h1>
             <p className="Init">League of Legends (LoL), commonly referred to as League, is a 2009 multiplayer online battle arena video game developed and published by Riot Games. Inspired by Defense of the Ancients, a custom map for Warcraft III, Riot's founders sought to develop a stand-alone game in the same genre.</p>
         <br></br>
-
+        <div className="data">
         <h2>Gameplay</h2>
             <img src={GIF} alt="gif" className="gifi"></img>
             <p>League of Legends is a multiplayer online battle arena (MOBA) game in which the player controls a character ("champion") with a set of unique abilities from an isometric perspective. As of 2023, there are exactly 165 champions available to play.Over the course of a match, champions gain levels by accruing experience points (XP) through killing enemies.Items can be acquired to increase champions' strength, and are bought with gold, which players accrue passively over time and earn actively by defeating the opposing team's minions,champions, or defensive structures. In the main game mode, Summoner's Rift, items are purchased through a shop menu available to players only when their champion is in the team's base.Each match is discrete; levels and items do not transfer from one match to another.</p>
@@ -42,7 +42,9 @@ function Htp () {
                 <img src={Bosque} alt="Bosque"/>
                </ul> 
                </div>
+            </div>  
         <br></br>
+        <div className="data">
         <h2>Champions</h2>
             <p>There are six classifications of LoL champions. A champion can belong to one or more categories, depending on the line you choose to play or the team of items you purchase from the store:</p>
             <ul><li>Assassins: These are champions whose abilities or gameplay possibilities make them special in the task of killing or destabilizing targets with high strategic value. Their characteristics are infiltration, deception and mobility.</li>
@@ -52,8 +54,9 @@ function Htp () {
             <li>Supports (also called Supporters): These are champions that reinforce or support their teammates with healing, shield and crowd control abilities or bonuses.</li>
             <li>Tanks: These are melee champions with the ability to reach high base HP to receive constant or massive damage due to their great defenses. They apply little physical damage in the game, but possess great crowd control. </li></ul>
             <div className="Clases"> <img src={Class} alt="class"></img></div>
+            </div>
             <br></br>
-
+        <div className="data">
         <h2>Summoner's Rift</h2>
             <p>Summoner's Rift is the flagship game mode of League of Legends and the most prominent in professional-level play.The mode has a ranked competitive ladder; a matchmaking system determines a player's skill level and generates a starting rank from which they can climb. There are nine tiers; the least skilled are Iron, Bronze, and Silver, and the highest are Master, Grandmaster, and Challenger.</p>
             <img src={Map} alt="Map1"/>
@@ -77,8 +80,10 @@ function Htp () {
             <img src={Grieta2} alt="gif3" ></img>
             <img src={Grieta3} alt="gif4" ></img>
             </div>
+            </div>
             <br></br>
 
+            <div className="data">
         <h2>ARAM</h2>
             <p>ARAM, abbreviation of All Random, All Mid, is a game mode in League of Legends in a 5v5 format on the Howling Abyss icon Howling Abyss, where the objective is to destroy the opposing team's Nexus. The game includes an Reroll All random draft type, and a game that takes place only on one long lane (specifically referencing its resemblance to Summoner's Rift icon Summoner's Rift's middle lane). </p>
 
@@ -108,7 +113,9 @@ function Htp () {
             <img src={Aram2} alt="gif6" ></img>
             <img src={Aram3} alt="gif7" ></img>
             </div>
-
+            </div>
+        
+            <div className="data">
         <h2>Twisted Treeline</h2>
         <img src={Map2} alt="Map2"/>
             <p>The Twisted Treeline was a 3v3 Field of Justice that was geared towards quicker gameplay as opposed to that of Summoner's Rift. The general time for games on this map was 20–35 minutes. The map featured a smaller field, with only two lanes and one legendary monster known as Vilemaw.</p>
@@ -123,8 +130,9 @@ function Htp () {
             <img src={Bosque1} alt="gif9" ></img>
             <img src={Bosque3} alt="gif10" ></img>
             </div>
+            </div>
             <br></br>
-
+        <hr></hr>
         <h2>References:</h2>
             <ul><a href="https://leagueoflegendsoficial.fandom.com/es/wiki/Wiki_League_of_legends_oficial">
             https://leagueoflegendsoficial.fandom.com/es/wiki/Wiki_League_of_legends_oficial</a></ul>

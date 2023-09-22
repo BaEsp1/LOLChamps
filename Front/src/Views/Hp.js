@@ -4,6 +4,19 @@ import Map2 from "../lol/Maps2.jpg";
 import Map3 from "../lol/Maps3.png";
 import GIF from "../lol/Gif/victory-lol.gif"
 import "./Hp.css" ;
+import Aram1 from "../lol/Gif/aram1.gif";
+import Aram2 from "../lol/Gif/aram2.gif";
+import Aram3 from "../lol/Gif/aram3.gif";
+import Grieta1 from "../lol/Gif/grieta1.gif";
+import Grieta2 from "../lol/Gif/grieta2.gif";
+import Grieta3 from "../lol/Gif/grieta3.gif";
+import Bosque1 from "../lol/Gif/Ashe.gif";
+import Bosque2 from "../lol/Gif/Zac.gif";
+import Bosque3 from "../lol/Gif/Braum.gif";
+import Grieta from "../lol/Maps/Abismo.png";
+import Bosque from "../lol/Maps/Bosque.png";
+import Lamentos from "../lol/Maps/Lamentos.png";
+import Class from "../lol/class.jpg";
 
 function Htp () {
 
@@ -20,11 +33,15 @@ function Htp () {
             <img src={GIF} alt="gif" className="gifi"></img>
             <p>League of Legends is a multiplayer online battle arena (MOBA) game in which the player controls a character ("champion") with a set of unique abilities from an isometric perspective. As of 2023, there are exactly 165 champions available to play.Over the course of a match, champions gain levels by accruing experience points (XP) through killing enemies.Items can be acquired to increase champions' strength, and are bought with gold, which players accrue passively over time and earn actively by defeating the opposing team's minions,champions, or defensive structures. In the main game mode, Summoner's Rift, items are purchased through a shop menu available to players only when their champion is in the team's base.Each match is discrete; levels and items do not transfer from one match to another.</p>
             <h3>Maps:</h3>
-            <ul>
-            <li>Summoner's Rift</li>
-            <li>ARAM - Howling Abyss</li>
-            <li>Twisted Treeline</li>
-            </ul>
+            <div className="Maps">            
+            <ul><li>Summoner's Rift</li>
+                <img src={Grieta} alt="Grieta"/>       
+                <li>ARAM - Howling Abyss</li>
+                <img src={Lamentos} alt="Lamentos"/>        
+                <li>Twisted Treeline</li>
+                <img src={Bosque} alt="Bosque"/>
+               </ul> 
+               </div>
         <br></br>
         <h2>Champions</h2>
             <p>There are six classifications of LoL champions. A champion can belong to one or more categories, depending on the line you choose to play or the team of items you purchase from the store:</p>
@@ -34,6 +51,7 @@ function Htp () {
             <li>Sharpshooters: These are champions with low defenses but with the ability to perform attacks at medium or long distances to eliminate opponents without being hit.</li>
             <li>Supports (also called Supporters): These are champions that reinforce or support their teammates with healing, shield and crowd control abilities or bonuses.</li>
             <li>Tanks: These are melee champions with the ability to reach high base HP to receive constant or massive damage due to their great defenses. They apply little physical damage in the game, but possess great crowd control. </li></ul>
+            <div className="Clases"> <img src={Class} alt="class"></img></div>
             <br></br>
 
         <h2>Summoner's Rift</h2>
@@ -53,6 +71,12 @@ function Htp () {
             <li>Minions cannot be pulled very far from their lane: After a short distance, they return to their lane.</li>
             <li>You cannot buyback (instant revival at the cost of gold).</li>
             <li>Additional buildings removed: only the turrets, Nexus, and inhibitors (or barracks) remain.</li></ul>
+            
+            <div className="Game">
+            <img src={Grieta1} alt="gif2" ></img>
+            <img src={Grieta2} alt="gif3" ></img>
+            <img src={Grieta3} alt="gif4" ></img>
+            </div>
             <br></br>
 
         <h2>ARAM</h2>
@@ -79,6 +103,11 @@ function Htp () {
             <li>The range at which the shop becomes disabled is a slight distance away from the Nexus turrets.</li>
             <li>Unanimous Surrender is enabled at 8:00.</li>
             <li>Surrender is enabled at 12:00.</li></ul>
+            <div className="Game">
+            <img src={Aram1} alt="gif5" ></img>
+            <img src={Aram2} alt="gif6" ></img>
+            <img src={Aram3} alt="gif7" ></img>
+            </div>
 
         <h2>Twisted Treeline</h2>
         <img src={Map2} alt="Map2"/>
@@ -88,7 +117,13 @@ function Htp () {
             <li>A jungle populated by neutral monsters of varying degrees of toughness, the toughest of which provide buffs and gold for yo whole team.</li>
             <li>Powerful turrets defend key areas on the map. You must confront these in addition to your enemies if you are to make heway toward victory.</li>
             <li>Two bases at opposite corners of the map, populated by a shop, a Nexus and one turret to defend the nexus.</li>
-            </ul><br></br>
+            </ul>
+            <div className="Game">
+            <img src={Bosque2} alt="gif8" ></img>
+            <img src={Bosque1} alt="gif9" ></img>
+            <img src={Bosque3} alt="gif10" ></img>
+            </div>
+            <br></br>
 
         <h2>References:</h2>
             <ul><a href="https://leagueoflegendsoficial.fandom.com/es/wiki/Wiki_League_of_legends_oficial">

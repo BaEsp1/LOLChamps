@@ -54,3 +54,37 @@
     width: 19%;
     margin-right: 2%;
 }
+
+.Game{
+    display: flex;
+    float: none;
+    margin: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.Game img{
+    width: 30%;
+}
+
+.Maps{
+    display: flex;
+    flex-direction: row-reverse;
+    font-weight: bold;
+}
+
+.Maps img{
+    width: 20%;
+    float: none;
+}
+
+.Clases img{
+    width: 40%;
+    float: left;
+}
+
+.Clases{
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}

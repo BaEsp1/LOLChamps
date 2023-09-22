@@ -24,7 +24,7 @@ function App () {
             <Route path='/home' element={<Home/>} name='home' key='home' />
             <Route path='/howToPlay' element={<Hp/>} name='hp' key='hp' />
             <Route path='/maps' element={<Maps/>} name='maps' key='maps' />
-            <Route path='/maps/City' element={<City/>} name='city' key='city' />
+            <Route path='/maps/:cityId' element={<City/>} name='city' key='city' />
             <Route path='/champs' element={<Champs/>} name='champs' key='champs' />
             <Route path='/champs/:detailId' element={<Detail/>} name='detail' key='detail' />
             <Route path='/favorites' element={<Favorites/>} name='favorites' key='favorites' />

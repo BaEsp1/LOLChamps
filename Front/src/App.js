@@ -4,7 +4,6 @@ import Lp from "./Views/Lp";
 import Home from "./Views/Home";
 import Hp from "./Views/Hp";
 import Maps from "./Views/Maps";
-import City from "./Views/City";
 import Champs from "./Views/Champs";
 import Detail from "./Views/Detail";
 import Favorites from "./Views/Favorite";
@@ -24,7 +23,7 @@ function App () {
             <Route path='/home' element={<Home/>} name='home' key='home' />
             <Route path='/howToPlay' element={<Hp/>} name='hp' key='hp' />
             <Route path='/maps' element={<Maps/>} name='maps' key='maps' />
-            <Route path='/maps/:cityId' element={<City/>} name='city' key='city' />
+            {/* <Route path='/maps/:cityId' element={<City/>} name='city' key='city' /> */}
             <Route path='/champs' element={<Champs/>} name='champs' key='champs' />
             <Route path='/champs/:detailId' element={<Detail/>} name='detail' key='detail' />
             <Route path='/favorites' element={<Favorites/>} name='favorites' key='favorites' />

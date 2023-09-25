@@ -5,7 +5,6 @@
 }
 
 .Frejord{
-
 }
 
 .Demacia{
@@ -42,4 +41,58 @@
 
 .Bilgewater{
 
+}
+
+.info{
+    background-color: rgba(0, 0, 0, 0.81);
+    width: 82%;
+    margin: auto;
+    box-shadow: 0 0 18px #5c450d;
+    border: solid #745729;
+    border-radius: 0 20px 0 20px;
+}
+
+.info p{
+    margin: auto 2%;
+    background-color: #00000059;
+    border-radius: 11%;
+    color: #b1b2b3;
+
+}
+
+.info h1{
+    color: #745729;
+    text-shadow: 0 0 20px #c9973d;
+    font-weight: bold;
+    margin-left: 6%;
+}
+
+.info button{
+    background-color: #150050;
+    color: white;
+    box-shadow: 0 0 12px #3f0071;
+    border: solid #150050;
+    border-radius: 33%;
+    font-size: medium;
+    margin-top: 1%;
+    font-family: 'Beaufort';
+    float: right;
+    margin-right: 1%;
+}
+.info button:hover{
+    box-shadow: 0 0 14px #c9973d;
+}
+
+.info img{
+    width: 20em;
+    height: 13em;
+    border-radius: 0 20px 0 20px;
+    box-shadow: 0 0 20px black;
+    margin: auto 1% 1%;
+}
+
+.info img:hover{
+    width: 21em;
+    height: 14em;
+    box-shadow: 0 0 20px #c9973d; 
 }

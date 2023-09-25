@@ -18,6 +18,22 @@ import Shur3 from "../lol/Cities/Shurima/12.jpg";
 import Sha1 from "../lol/Cities/Shadow/13.jpg";
 import Sha2 from "../lol/Cities/Shadow/14.jpg";
 import Sha3 from "../lol/Cities/Shadow/15.jpg";
+import Io1 from "../lol/Cities/Ionia/16.jpg";
+import Io2 from "../lol/Cities/Ionia/17.jpg";
+import Io3 from "../lol/Cities/Ionia/18.jpg";
+import Pil1 from "../lol/Cities/Piltover/1.jpg";
+import Pil2 from "../lol/Cities/Piltover/2.jpg";
+import Pil3 from "../lol/Cities/Piltover/3.jpg";
+import Za1 from "../lol/Cities/Zaun/4.jpg";
+import Za2 from "../lol/Cities/Zaun/5.jpg";
+import Za3 from "../lol/Cities/Zaun/6.jpg";
+import Bil1 from "../lol/Cities/Bilgewater/7.jpg";
+import Bil2 from "../lol/Cities/Bilgewater/8.jpg";
+import Bil3 from "../lol/Cities/Bilgewater/9.jpg";
+import Ix1 from "../lol/Cities/Ixtal/10.jpg";
+import Ix2 from "../lol/Cities/Ixtal/11.jpg";
+import Ix3 from "../lol/Cities/Ixtal/13.jpg";
+
 
 function Maps() {
   const [informacion, setInformacion] = useState(""); // Estado para almacenar la información
@@ -66,7 +82,6 @@ function ocultarDivYBotones() {
       subtitulo: "SPRAWLING WESTERN MOUNTAINS",
       carr:"carrousel de frejord",
     },
-
     Noxus: {
         texto: "Noxus is a powerful empire with a fearsome reputation. To those beyond its borders, it is brutal, expansionist, and threatening, yet those who look past its warlike exterior see an unusually inclusive society, where the strengths and talents of its people are respected and cultivated. The Noxii were once fierce barbarian tribes, until they stormed the ancient city that now lies at the heart of their domain. Under threat from all sides, they aggressively took the fight to their enemies, pushing their borders outward with each passing year. This struggle for survival has made modern Noxians a deeply proud people who value strength above all—though that strength can manifest in many different forms. Anyone can rise to a position of power and respect within Noxus if they display the necessary aptitude, regardless of social standing, background, homeland, or wealth. Those who are able to wield magic are held in particularly high esteem, and are actively sought out in order that their special talents may be honed and best harnessed for the benefit of the empire. But in spite of this meritocratic ideal, the old noble houses still wield considerable power… and some fear that the greatest threat to Noxus comes not from its enemies, but from within.",
         imagenes: [ Nox1, Nox2, Nox3],      
@@ -89,29 +104,41 @@ function ocultarDivYBotones() {
         carr:"carrousel de Shadow",
       },
     Ionia:{
-        texto: "Información de Targon...",
-        imagenes: ["imagen5.jpg"],
-        titulo: "Título de Frejord",
-        subtitulo: "Subtítulo de Frejord",
+        texto: "Surrounded by treacherous seas, Ionia is composed of a number of allied provinces scattered across a massive archipelago, known to many as the First Lands. Since Ionian culture has long been shaped by the pursuit of balance in all things, the border between the material and spirit realms tends to be more permeable here, especially in the wild forests and mountains. Although these lands’ enchantments can be fickle, its creatures dangerous and fae, for many centuries most Ionians led lives of plenty. The warrior monasteries, provincial militias—and even Ionia itself—had been enough to protect them. But that ended twelve years ago, when Noxus attacked the First Lands. The empire’s seemingly endless warhosts savaged Ionia, and were only defeated after many years, and at great cost. Now, Ionia exists in an uneasy peace. Different reactions to the war have divided the region—some groups, such as the Shojin monks or the Kinkou, seek a return to isolationist pacifism, and pastoral traditions. Other more radical factions, such as the Navori Brotherhood and the Order of Shadow, demand a militarization of the land’s magic, to create a single, unified nation that can take vengeance on Noxus. The fate of Ionia hangs in a delicate balance that few are willing to overturn, but all can feel shifting uneasily beneath their feet.",
+        imagenes: [Io1, Io2,Io3],
+        titulo: "Ionia",
+        subtitulo: "THE FIRST LANDS",
+        carr:"carrousel de Ionia",
       },
     Piltover: {
-        texto: "Información de Targon...",
-        imagenes: ["imagen5.jpg"],
-        titulo: "Título de Frejord",
-        subtitulo: "Subtítulo de Frejord",
+        texto: "Piltover is a thriving, progressive city whose power and influence is on the rise. It is Valoran’s cultural center, where art, craftsmanship, trade and innovation walk hand in hand. Its power comes not through military might, but the engines of commerce and forward thinking. Situated on the cliffs above the district of Zaun and overlooking the ocean, fleets of ships pass through its titanic sea-gates, bringing goods from all over the world. The wealth this generates has given rise to an unprecedented boom in the city’s growth. Piltover has - and still is - reinventing itself as a city where fortunes can be made and dreams can be lived. Burgeoning merchant clans fund development in the most incredible endeavors: grand artistic follies, esoteric hextech research, and architectural monuments to their power. With ever more inventors delving into the emergent lore of hextech, Piltover has become a lodestone for the most skilled craftsmen the world over.",
+        imagenes: [ Pil1, Pil2, Pil3],
+        titulo: "PILTOVER",
+        subtitulo: "THRIVING COASTAL CITY",
+        carr:"carrousel de Piltover",
       },
     Zaun: {
-        texto: "Información de Targon...",
-        imagenes: ["imagen5.jpg"],
-        titulo: "Título de Frejord",
-        subtitulo: "Subtítulo de Frejord",
+        texto: "Zaun is a large, undercity district, lying in the deep canyons and valleys threading Piltover. What light reaches below is filtered through fumes leaking from the tangles of corroded pipework and reflected from the stained glass of its industrial architecture. Zaun and Piltover were once united, but are now separate, yet symbiotic societies. Though it exists in perpetual smogged twilight, Zaun thrives, its people vibrant and its culture rich. Piltover’s wealth has allowed Zaun to develop in tandem; a dark mirror of the city above. Many of the goods coming to Piltover find their way into Zaun’s black markets, and hextech inventors who find the restrictions placed upon them in the city above too restrictive often find their dangerous researches welcomed in Zaun. Unfettered development of volatile technologies and reckless industry has rendered whole swathes of Zaun polluted and dangerous. Streams of toxic runoff stagnate in the city’s lower reaches, but even here people find a way to exist and prosper.",
+        imagenes: [ Za1 , Za2, Za3],
+        titulo: "ZAUN",
+        subtitulo: "POLLUTED UNDERCITY",
+        carr:"carrousel de Zaun",
       },
     Bilgewater: {
-        texto: "Información de Targon...",
-        imagenes: ["imagen5.jpg"],
-        titulo: "Título de Frejord",
-        subtitulo: "Subtítulo de Frejord",
+        texto: "Nestled away in the Blue Flame Isles archipelago, Bilgewater is a port city like no other—home to serpent hunters, dock gangs, and smugglers from across the known world. Here, fortunes are made and ambitions shattered in the blink of an eye. For those fleeing justice, debt, or persecution, Bilgewater can be a place of new beginnings, for no one on these twisted streets cares about your past. Even so, with each new dawn, careless travelers can always be found floating in the harbor, their purses empty and their throats slit… While incredibly dangerous, Bilgewater is ripe with opportunity, free from the shackles of formal government and trade regulation. If you have the coin, almost anything can be purchased here, from outlawed hextech to the favor of local crime lords. With the recent removal of the last “reaver king” of Bilgewater, the city has entered a period of transition, while the most prominent captains try to agree on its future. But as long as there are seaworthy ships and crews to sail them, Bilgewater is likely to remain one of the most colorful and well-connected places in Runeterra.",
+        imagenes: [Bil1, Bil2, Bil3],
+        titulo: "BILGEWATER",
+        subtitulo: "LAWLESS PORT CITY",
+        carr:"carrousel de Bilgewater",
       },
+      Ixtal:{
+        texto:"Renowned for its mastery of elemental magic, Ixtal was one of the first independent nations to join the Shuriman empire. In truth, Ixtali culture is much older—part of the great westward diaspora that gave rise to civilizations including the Buhru, magnificent Helia, and the ascetics of Targon—and it is likely they played a significant role in the creation of the first Ascended. But the mages of Ixtal survived the Void, and later the Darkin, by distancing themselves from their neighbors, drawing the wilderness around them like a shield. While much had already been lost, they were committed to the preservation of what little remained… Now, secluded deep in the jungle for thousands of years, the sophisticated arcology-city of Ixaocan remains mostly free of outside influence. Having witnessed from afar the ruination of the Blessed Isles and the Rune Wars that followed, the Ixtali view all the other factions of Runeterra as upstarts and pretenders, and use their powerful magic to keep any intruders at bay.",
+        imagenes: [Ix1,Ix2, Ix3],
+        titulo: "IXTAL",
+        subtitulo:"PERILOUS EASTERN JUNGLES",
+        carr:"carrousel de Ixtal",
+      }
+     
 
   };
 
@@ -190,9 +217,44 @@ function ocultarDivYBotones() {
               )}
               className="Shadow">
                 <img src="Shadow" alt="Shadow"/>
-            Shadow Isle
+            Shadow Isles
           </button>
-
+        {/* -----------------Ionia -----------------*/}
+        <button id="Ionia" onClick={() => mostrarDivYBotones(
+                informacionBotones.Ionia.texto,
+                informacionBotones.Ionia.imagenes,
+                informacionBotones.Ionia.titulo,
+                informacionBotones.Ionia.subtitulo,
+                informacionBotones.Ionia.carr,
+              )}
+              className="Ionia">
+                <img src="Ionia" alt="Ionia"/>
+            Ionia
+          </button>
+         {/* -----------------Piltover -----------------*/}
+         <button id="Piltover" onClick={() => mostrarDivYBotones(
+                informacionBotones.Piltover.texto,
+                informacionBotones.Piltover.imagenes,
+                informacionBotones.Piltover.titulo,
+                informacionBotones.Piltover.subtitulo,
+                informacionBotones.Piltover.carr,
+              )}
+              className="Piltover">
+                <img src="Piltover" alt="Piltover"/>
+            Piltover
+          </button>
+         {/* -----------------Ixtal -----------------*/}
+         <button id="Ixtal" onClick={() => mostrarDivYBotones(
+                informacionBotones.Ixtal.texto,
+                informacionBotones.Ixtal.imagenes,
+                informacionBotones.Ixtal.titulo,
+                informacionBotones.Ixtal.subtitulo,
+                informacionBotones.Ixtal.carr,
+              )}
+              className="Ixtal">
+                <img src="Ixtal" alt="Ixtal"/>
+            Ixtal
+          </button>
 
         </div>
 

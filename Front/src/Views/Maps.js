@@ -153,7 +153,7 @@ function ocultarDivYBotones() {
   };
 
   return (
-    <div className="Maps">
+    <div className="Mapss">
       {/* Botones */}
       {mostrarBotones && (
         <div className="Buttons">

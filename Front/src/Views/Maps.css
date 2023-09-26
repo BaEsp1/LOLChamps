@@ -9,43 +9,196 @@
 }
 
 .Freljord{
-background-color: transparent;
-border: none;}
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 27.7em;
+    top: 20em;
+}
+
+.Freljord img{
+    width: 40%;
+}
+
+.Freljord img:hover{
+    box-shadow: 0 0 12px #3f0071;
+    border-radius: 56em;
+    background-color: #150050b3;
+}
 
 .Demacia{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 23.9em;
+    top: 32em;
+}
 
+.Demacia img{
+    width: 40%;
+}
+
+.Demacia img:hover{
+    box-shadow: 0 0 12px #3f0071;
+    border-radius: 56em;
+    background-color: #150050b3;
 }
 
 .Targon{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 33.2em;
+    bottom: -0.5em;
+}
 
+.Targon img{
+    width: 32%;
+}
+
+.Targon img:hover{
+    box-shadow: 0 0 12px #3f0071;
+    border-radius: 54em;
+    background-color: #150050b3;
+    padding-top:5%;
+    padding-right:3%;
 }
 
 .Noxus{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 45em;
+    top: 26.5em;
+}
+.Noxus img{
+    width: 30%;
+}
 
+.Noxus img:hover{
+    box-shadow: 0 0 12px #3f0071;
+    border-radius: 54em;
+    background-color: #150050b3;
 }
 
 .Shurima{
-
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    left: 48.8em;
+    bottom: 0.7em;
+}
+.Shurima img{
+    width: 30%;
+}
+.Shurima img:hover{
+    box-shadow: 0 0 12px #3f0071;
+    border-radius: 54em;
+    background-color: #150050b3;
+    padding-top: 4%;
 }
 
 .Shadow{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 25.2em;
+    bottom: -1em;
+}
 
+.Shadow img{
+    width: 38%;
+}
+.Shadow img:hover{
+    box-shadow: 0 0 12px #3f0071;
+    border-radius: 54em;
+    background-color: #150050b3;
+    margin-top: 6%;
 }
 
 .Ionia{
-
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 34em;
+    bottom: 32.7em;
+}
+.Ionia img{
+width: 31%;
+}
+.Ionia img:hover{
+    box-shadow: 0 0 12px #3f0071;
+    border-radius: 54em;
+    background-color: #150050b3;
 }
 
 .Piltover{
-
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 51.9em;
+    bottom: 16.6em;
+}
+.Piltover img{
+    width: 29%;
+}
+.Piltover img:hover{
+    box-shadow: 0 0 12px #3f0071;
+    border-radius: 54em;
+    background-color: #150050b3;
+    margin: 1%;
 }
 
 .Zaun{
-
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 52.92em;
+    bottom: 11.9em;
+}
+.Zaun img{
+    width: 31%;
+}
+.Zaun img:hover{
+    box-shadow: 0 0 12px #3f0071;
+    border-radius: 54em;
+    background-color: #150050b3;
 }
 
 .Bilgewater{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 33em;
+    bottom: 9.9em;
+}
 
+.Bilgewater img{
+    width: 41%;
+}
+
+.Bilgewater img:hover{
+    box-shadow: 0 0 12px #3f0071;
+    border-radius: 54em;
+    background-color: #150050b3;
+}
+
+.Ixtal{
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    right: 47.7em;
+    bottom: 1.9em;
+}
+
+.Ixtal img{
+    width: 35%;
+}
+
+.Ixtal img:hover{
+    box-shadow: 0 0 12px #3f0071;
+    border-radius: 54em;
+    background-color: #150050b3;
 }
 
 .info{

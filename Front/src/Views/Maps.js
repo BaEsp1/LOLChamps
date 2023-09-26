@@ -33,8 +33,17 @@ import Bil3 from "../lol/Cities/Bilgewater/9.jpg";
 import Ix1 from "../lol/Cities/Ixtal/10.jpg";
 import Ix2 from "../lol/Cities/Ixtal/11.jpg";
 import Ix3 from "../lol/Cities/Ixtal/13.jpg";
-import FreS from "../lol/Cities/Rv/FrejS.png"
-
+import FreS from "../lol/Cities/Rv/FrejS.png";
+import BilgeS from "../lol/Cities/Rv/BilgeS.png";
+import DemaciaS from "../lol/Cities/Rv/DemaciaS.png";
+import IoniaS from "../lol/Cities/Rv/IoniaS.png";
+import IxtalS from "../lol/Cities/Rv/IxtalS.png";
+import NoxusS from "../lol/Cities/Rv/NoxusS.png";
+import piltoverS from "../lol/Cities/Rv/piltoverS.png";
+import ShadowS from "../lol/Cities/Rv/ShadowS.png";
+import ShuriS from "../lol/Cities/Rv/ShuriS.png";
+import TargonS from "../lol/Cities/Rv/TargonS.png";
+import ZaunS from "../lol/Cities/Rv/ZaunS.png";
 
 function Maps() {
   const [informacion, setInformacion] = useState(""); // Estado para almacenar la información
@@ -159,7 +168,6 @@ function ocultarDivYBotones() {
               )}
               className="Freljord">
                 <img src={FreS} alt="Freljord"/>
-                Frejord
           </button>
              {/* -----------------Demacia -----------------*/}
           <button id="Demacia" onClick={() => mostrarDivYBotones(
@@ -170,8 +178,7 @@ function ocultarDivYBotones() {
                 informacionBotones.Demacia.carr,
               )}
               className="Demacia">
-                <img src="Demacia" alt="Demacia"/>
-            Demacia
+                <img src={DemaciaS} alt="Demacia"/>
           </button>
         {/* -----------------Targon -----------------*/}
             <button id="Targon" onClick={() => mostrarDivYBotones(
@@ -182,8 +189,7 @@ function ocultarDivYBotones() {
                 informacionBotones.Targon.carr,
               )}
               className="Targon">
-                <img src="Targon" alt="Targon"/>
-            Targon
+                <img src={TargonS} alt="Targon"/>
           </button>
                  {/* -----------------Noxus -----------------*/}
                  <button id="Noxus" onClick={() => mostrarDivYBotones(
@@ -194,8 +200,7 @@ function ocultarDivYBotones() {
                 informacionBotones.Noxus.carr,
               )}
               className="Noxus">
-                <img src="Noxus" alt="Noxus"/>
-            Noxus
+                <img src={NoxusS} alt="Noxus"/>
           </button>
             {/* -----------------Shurima -----------------*/}
             <button id="Shurima" onClick={() => mostrarDivYBotones(
@@ -206,8 +211,7 @@ function ocultarDivYBotones() {
                 informacionBotones.Shurima.carr,
               )}
               className="Shurima">
-                <img src="Shurima" alt="Shurima"/>
-            Shurima
+                <img src={ShuriS} alt="Shurima"/>
           </button>
             {/* -----------------Shadow -----------------*/}
                 <button id="Shadow" onClick={() => mostrarDivYBotones(
@@ -218,8 +222,7 @@ function ocultarDivYBotones() {
                 informacionBotones.Shadow.carr,
               )}
               className="Shadow">
-                <img src="Shadow" alt="Shadow"/>
-            Shadow Isles
+                <img src={ShadowS} alt="Shadow"/>
           </button>
         {/* -----------------Ionia -----------------*/}
         <button id="Ionia" onClick={() => mostrarDivYBotones(
@@ -230,8 +233,7 @@ function ocultarDivYBotones() {
                 informacionBotones.Ionia.carr,
               )}
               className="Ionia">
-                <img src="Ionia" alt="Ionia"/>
-            Ionia
+                <img src={IoniaS} alt="Ionia"/>
           </button>
          {/* -----------------Piltover -----------------*/}
          <button id="Piltover" onClick={() => mostrarDivYBotones(
@@ -242,8 +244,29 @@ function ocultarDivYBotones() {
                 informacionBotones.Piltover.carr,
               )}
               className="Piltover">
-                <img src="Piltover" alt="Piltover"/>
-            Piltover
+                <img src={piltoverS} alt="Piltover"/>
+          </button>
+                   {/* -----------------Bilgewater -----------------*/}
+         <button id="Bilgewater" onClick={() => mostrarDivYBotones(
+                informacionBotones.Bilgewater.texto,
+                informacionBotones.Bilgewater.imagenes,
+                informacionBotones.Bilgewater.titulo,
+                informacionBotones.Bilgewater.subtitulo,
+                informacionBotones.Bilgewater.carr,
+              )}
+              className="Bilgewater">
+                <img src={BilgeS} alt="Bilgewater"/>
+          </button>
+                   {/* -----------------Zaun -----------------*/}
+         <button id="Zaun" onClick={() => mostrarDivYBotones(
+                informacionBotones.Zaun.texto,
+                informacionBotones.Zaun.imagenes,
+                informacionBotones.Zaun.titulo,
+                informacionBotones.Zaun.subtitulo,
+                informacionBotones.Zaun.carr,
+              )}
+              className="Zaun">
+                <img src={ZaunS} alt="Piltover"/>
           </button>
          {/* -----------------Ixtal -----------------*/}
          <button id="Ixtal" onClick={() => mostrarDivYBotones(
@@ -254,8 +277,7 @@ function ocultarDivYBotones() {
                 informacionBotones.Ixtal.carr,
               )}
               className="Ixtal">
-                <img src="Ixtal" alt="Ixtal"/>
-            Ixtal
+                <img src={IxtalS} alt="Ixtal"/>
           </button>
 
         </div>

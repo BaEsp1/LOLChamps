@@ -33,6 +33,7 @@ import Bil3 from "../lol/Cities/Bilgewater/9.jpg";
 import Ix1 from "../lol/Cities/Ixtal/10.jpg";
 import Ix2 from "../lol/Cities/Ixtal/11.jpg";
 import Ix3 from "../lol/Cities/Ixtal/13.jpg";
+import FreS from "../lol/Cities/Rv/FrejS.png"
 
 
 function Maps() {
@@ -148,6 +149,7 @@ function ocultarDivYBotones() {
       {mostrarBotones && (
         <div className="Buttons">
             {/* ------------Frijol ----------- */}
+            
           <button id="Freljord" onClick={() => mostrarDivYBotones(
                 informacionBotones.Freljord.texto,
                 informacionBotones.Freljord.imagenes,
@@ -156,7 +158,7 @@ function ocultarDivYBotones() {
                 informacionBotones.Freljord.carr,
               )}
               className="Freljord">
-                <img src="Freljord" alt="Freljord"/>
+                <img src={FreS} alt="Freljord"/>
                 Frejord
           </button>
              {/* -----------------Demacia -----------------*/}

@@ -1,11 +1,16 @@
 
 .Maps{
     background-image: url("../lol/Maps/1.png");
-    height: 96%;
+    height: 97%;
+    width: 99%;
+    margin: 1% auto;
+    box-shadow: 0 0 20px 4px black;
+    border-radius: 0 20px 0 20px;
 }
 
-.Frejord{
-}
+.Freljord{
+background-color: transparent;
+border: none;}
 
 .Demacia{
 

@@ -1,0 +1,32 @@
+const { Champ } = require('../db');
+const axios = require('axios');
+
+async function getData() {
+  const allChamps = await Champ.findAll();
+
+  if (!allChamps.length) {
+    try {
+      const apiResponse = await axios.get('http://ddragon.leagueoflegends.com/cdn/9.18.1/data/en_US/champion.json');
+      const apiChamps = Object.values(apiResponse.data.data).map((e) => {
+        return {
+          id: e.id,
+          name: e.name,
+          title: e.title,
+          blurb: e.blurb,
+          image: e.image.full,
+          tags: e.tags,
+          info: e.info.full,
+        };
+      });
+
+      await Champ.bulkCreate(apiChamps);
+      console.log('BD created');
+    } catch (error) {
+      console.error('Error fetching or processing data:', error.message);
+    }
+  }
+
+  return allChamps;
+}
+
+module.exports = { getData };

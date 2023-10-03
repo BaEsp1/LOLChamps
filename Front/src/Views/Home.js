@@ -2,14 +2,17 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import "./Home.css" ;
 import MyCarousel2 from "../Components/Carrousel/Home-Maps";
+import { useEffect } from "react";
+import { getChamps} from "../Components/Redux/Actions";
+import { connect } from 'react-redux';
+import { setFilter } from "../Components/Redux/Actions";
 
-function Home () {
-
-
-    // poner un loading hasta que cargue:
- //Pedir que traigan los campeones
- // pedir que los dividan en clases 
-
+function Home ( {getChamps}) {
+    
+    useEffect(() => {
+        getChamps();
+        setFilter();
+    },[getChamps])
 
     return (
         <div className="Home">
@@ -27,21 +30,21 @@ function Home () {
                 <div className="Columna1">
                     <Link to="" >SUPPORT</Link>             
                     <p>Carousel</p>   
-                    <Link to="" >ADC</Link>
+                    <Link to="" >MARKSMAN</Link>
                     <p>Carousel</p>  
                 </div>
 
                 <div className="Carousel2">
                 <MyCarousel2/>
                 <br></br>
-                <Link to="" >Mid Line</Link>
+                <Link to="" >TANK</Link>
                 <p>Carousel</p>  
                 </div>
 
                 <div className="Columna3">
-                    <Link to="" >Top Line</Link>   
+                    <Link to="" >MAGE</Link>   
                     <p>Carousel</p>               
-                    <Link to="" >Jungle</Link>
+                    <Link to="" >ASSASIN</Link>
                     <p>Carousel</p>  
                 </div>
 
@@ -51,4 +54,14 @@ function Home () {
     )   
 }
 
-export default Home;
+
+const mapStateToProps = (state) => ({
+    allChamps: state.allChamps,
+    filteredChamps: state.filteredChamps,
+  })
+  
+  const mapDispatchToProps = {
+    getChamps,
+  };
+  
+  export default connect(mapStateToProps, mapDispatchToProps)(Home);

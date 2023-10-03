@@ -15,7 +15,7 @@ async function getData() {
           blurb: e.blurb,
           image: e.image.full,
           tags: e.tags,
-          info: e.info.full,
+          info: e.info,
         };
       });
 

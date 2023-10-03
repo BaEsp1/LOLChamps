@@ -1,7 +1,6 @@
 
 const express = require('express');
 const cookieParser = require('cookie-parser');
-const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const routes = require('./Routes/index.js');
 
@@ -11,8 +10,8 @@ const server = express();
 
 server.name = 'API';
 
-server.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
-server.use(bodyParser.json({ limit: '50mb' }));
+server.use(express.json({ limit: '50mb' }));
+server.use(express.urlencoded({ extended: true, limit: '50mb' }));
 server.use(cookieParser());
 server.use(morgan('dev'));
 server.use((req, res, next) => {
@@ -26,20 +25,12 @@ server.use((req, res, next) => {
 server.use('/', routes);
 
 // Error catching endware.
-server.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
+server.use((err, req, res, next) => {
   const status = err.status || 500;
-  const message = err.message || err;
+  const message = err.message || 'Internal Server Error';
   console.error(err);
-  res.status(status).send(message);
+  res.status(status).json({ error: message });
 });
 
-server.get( "", async (req , res) => {
-    try {
-        const allChamps = await Champ.findAll();
-        res.status(200).json(allChamps);
-    } catch (error) {
-        res.status(400).json({msg: error.message});
-    }
-});
 
 module.exports = server;

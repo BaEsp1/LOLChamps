@@ -29,8 +29,35 @@ async function getDetail(req, res) {
     }
   }
 
+  async function getClass(req, res) {
+    try {
+      const all = await Champ.findAll();
+  
+
+      const champsByTag = all.reduce((acc, champ) => {
+        const tagsArray = champ.tags
+          ? champ.tags.replace(/[{}]/g, '').split(',')
+          : [];
+  
+        tagsArray.forEach((tag) => {
+          acc[tag] = [...(acc[tag] || []), champ];
+        });
+  
+        return acc;
+      }, {});
+  
+      res.status(200).json(champsByTag);
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: 'Internal Server Error' });
+    }
+  }
+  
+  
+
 
 module.exports = {
     getChamps,
     getDetail,
+    getClass,
 };

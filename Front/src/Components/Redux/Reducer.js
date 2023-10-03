@@ -3,14 +3,14 @@ import {
   READY,
   GET_ALL_CHAMPS,
   GET_DETAIL,
-  SET_FILTER,
+  GET_CLASS,
 } from "./ActionsType"
 
 const initialState = {
   display: false,
   allChamps:[],
+  class:[],
   detail:[],
-  filteredChamps: {},
   };
 
   const rootReducer = (state = initialState, action) => {
@@ -31,25 +31,16 @@ const initialState = {
           allChamps: action.payload.allChamps,
         };
       }
-      case SET_FILTER: {
-        const { allChamps } = state;
-        
-        const filter = allChamps.reduce((acc, champ) => {
-          champ.tags.forEach((tag) => {
-            acc[tag] = [...(acc[tag] || []), champ];
-          });
-          return acc;
-        }, {});
-      
+      case GET_CLASS: {
         return {
           ...state,
-          filteredChamps: filter,
+          class: action.payload.class,
         };
       }
       case GET_DETAIL: {
         return { 
-                ...state,
-                detail: action.payload,
+          ...state,
+          detail: action.payload,
         }; 
       }
     default:

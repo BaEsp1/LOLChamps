@@ -67,3 +67,14 @@ margin:auto;
     font-size: larger;
     font-weight: bold;
 }
+
+.botombutons{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-around;
+}
+
+/* .Carousel2 div div{
+    display: block;
+} */

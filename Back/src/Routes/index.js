@@ -1,5 +1,6 @@
 const { Router } = require('express');
 const champsR = require("../Routes/Rchamps")
+const classR = require("../Routes/RClass")
 // const  countriesR = require('../routes/countriesR');
 // const  activitiesR  = require('../routes/activitiesR');
 //const {activity , country }  = require ("../db")
@@ -12,5 +13,6 @@ const router = Router();
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 router.use('/champs', champsR );
+router.use('/class', classR);
 
 module.exports = router;

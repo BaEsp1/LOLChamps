@@ -6,7 +6,7 @@ async function getData() {
 
   if (!allChamps.length) {
     try {
-      const apiResponse = await axios.get('http://ddragon.leagueoflegends.com/cdn/9.18.1/data/en_US/champion.json');
+      const apiResponse = await axios.get('http://ddragon.leagueoflegends.com/cdn/12.6.1/data/en_US/champion.json');
       const apiChamps = Object.values(apiResponse.data.data).map((e) => {
         return {
           id: e.id,

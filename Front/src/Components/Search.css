@@ -1,0 +1,13 @@
+
+.Lupa{
+    width: 19.3px;
+    background: white;
+    margin: -3.3%;
+    border-radius: 0 7px 7px;
+}
+
+.Search input{
+    width: 50%;
+    border-radius: 7px 0 0 7px;
+    border: 1px solid white;
+}

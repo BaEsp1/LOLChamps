@@ -1,0 +1,80 @@
+.page{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.paginado{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.labelPag{
+    font-weight: bolder;
+    padding: 0 0.2%;
+}
+.boton{
+    font-weight: bolder;
+    border-radius: 20%;
+    background-color: #3F0071;
+    color:rgba(255, 255, 255, 0.40)
+}
+
+.boton:hover{
+    box-shadow: 0 0 4px 0px rgb(159 85 219);
+    border: 1px solid rgb(159 85 219);
+}
+
+.filtros{
+    display: flex;
+    flex-flow: column;
+    width: 10%;
+    margin: 1%;
+}
+
+.filtros button{
+    width: 7em;
+    margin: 0 auto 5px;
+}
+
+.filtros select{
+    width: 7em;
+    margin: 0 auto 5px; 
+    text-align: center;
+}
+
+.allChamps{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.Card{
+    background-color: rgba(0, 0, 0, 0.689);
+    border-radius: 0 20px 0 20px;
+    padding: 0.5%;
+}
+
+.square{
+    border-radius: 0 25px 0 25px;
+}
+
+.Card:hover{
+    background-color: rgb(39 9 110 / 84%);
+    box-shadow: 1px 0px 10px 0px rgb(159 85 219);
+    padding: 0.7%;
+}
+
+.Fav{
+    width: 20px;
+    float: right;
+    background-color: #9fa3a7;
+    border-radius: 1em;
+    padding: 1px;
+}
+
+.Fav:active{
+    background-color: #e73636;
+    box-shadow: 0 0 1px 2px #e78d8d;
+    width: 21px;
+}

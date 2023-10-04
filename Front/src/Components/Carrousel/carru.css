@@ -1,7 +1,8 @@
-.tanks {
- width: 8em;
+.carru {
+ width: 16em;
 }
 
-.tanks  img{
-height: 10%;
+.carru  img{
+    width: 4em;
+    border-radius: 0 35px 0 35px;
 }

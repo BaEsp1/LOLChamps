@@ -16,12 +16,13 @@ import Grieta from "../lol/Maps/Abismo.png";
 import Bosque from "../lol/Maps/Bosque.png";
 import Lamentos from "../lol/Maps/Lamentos.png";
 import Class from "../lol/class.jpg";
+import { Link } from "react-router-dom";
 
 function Htp () {
 
     return (
         <div>
-
+            <Link to="/home" className="BackHome">Back to Home</Link>
         <div className="HowToPlay">
 
         <h1>What is "League of Legends"?</h1>

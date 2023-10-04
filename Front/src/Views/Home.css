@@ -5,8 +5,10 @@
 } */
 
 .HowPlay{
- margin: auto;
- color:white;
+    margin: 3% auto;
+    color: white;
+    display: flex;
+    height: 8em;
 }
 
 .HowPlay p{
@@ -15,23 +17,24 @@ margin:auto;
 }
 
 .ImgHome{
-    background-image: url("../lol/Banner2.png");
-    margin: auto;
-    width: 80%;
+    width: 91%;
     height: 10em;
-    opacity: 50%;
-    box-shadow:0 0 10px 3px rgb(17, 16, 18);
+    opacity: 43%;
+    box-shadow: 0 0 10px 3px rgb(17 16 18);
     border-radius: 4em;
+    position: absolute;
+    left: 5em;
+    top: 10em;
 }
-.ImgHome h1{
+.HowPlay h1{
     opacity: 100%;
 }
-.ImgHome p{
+.HowPlay p{
     opacity: 100%;
 }
 
 .Carousel2{
-    width: 40%;
+    width: 42.4%;
     margin: auto;
     font-size: larger;
     font-weight: bold;
@@ -41,7 +44,7 @@ margin:auto;
     
         width: 74%;
         border-radius: 0 50px 0 50px;
-        margin: 10px auto 0px;
+        margin:auto;
         box-shadow:0 0 10px 3px rgb(17, 16, 18)
     
 }
@@ -55,26 +58,39 @@ margin:auto;
 .Columna1{
     display: flex;
     flex-direction: column;
-    margin:auto;
     font-size: larger;
     font-weight: bold;
+    justify-content: space-around;
+    margin:0 1em;
+
 }
 
 .Columna3{
     display: flex;
     flex-direction: column;
-    margin:auto;
     font-size: larger;
     font-weight: bold;
+    justify-content: space-around;
+    margin:0 1em;
 }
 
 .botombutons{
     display: flex;
     flex-direction: row;
     margin: auto;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-/* .Carousel2 div div{
-    display: block;
-} */
+.Order a{
+    font-size: x-large;
+    padding: 1%;
+    color: blueviolet;
+    text-shadow: 1px 0px 20px #9417c3;
+}
+
+.Order a:hover{
+    font-size: x-large;
+    padding: 1%;
+    color: rgb(226, 197, 233);
+    text-shadow: 1px 0px 20px #9417c3;
+}

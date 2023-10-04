@@ -116,3 +116,16 @@ hr{
     box-shadow: 1px -4px 20px 3px black;
     width: 89%;
 }
+
+.BackHome{
+    position: fixed;
+    left: 2em;
+    top: 17em;
+    background: rgb(70 2 106);
+    width: 4%;
+    border-radius: 2em;
+    font-weight: bolder;
+    box-shadow: 3px -1px 11px 8px rgb(59 1 90);
+    color: #d1cbd7;
+    padding: 0.2%;
+}

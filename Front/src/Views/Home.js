@@ -23,12 +23,12 @@ function Home() {
         <div className="Order">
             <div className="Columna1">
                 <div>
-                    <Link to="">SUPPORT</Link>
+                    <h2>SUPPORT</h2>
                     <SuppC/>                
                 </div>
 
                 <div>
-                    <Link to="">ASSASSIN</Link>
+                    <h2>ASSASSIN</h2>
                     <AssasC/>                
                 </div>
             </div>
@@ -38,12 +38,12 @@ function Home() {
                 <br></br>
                 <div className="botombutons">
                     <div>
-                        <Link to="">TANK</Link>
+                        <h2>TANK</h2>
                         <TanksC/>
                     </div>
                     <br></br>
                     <div>
-                        <Link to="">FIGTHER</Link>
+                        <h2>FIGTHER</h2>
                         <FigthC/>
                     </div>
                 </div>
@@ -52,11 +52,11 @@ function Home() {
 
             <div className="Columna3">
                 <div>
-                    <Link to="">MAGE</Link>
+                    <h2>MAGE</h2>
                     < MagesC/>
                 </div>
                 <div>
-                    <Link to="">MARKSMAN</Link>
+                    <h2>MARKSMAN</h2>
                     <MarkC/>
                 </div>
             </div>

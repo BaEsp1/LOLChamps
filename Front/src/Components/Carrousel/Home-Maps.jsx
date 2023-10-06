@@ -16,6 +16,9 @@ const MyCarousel2 = () => {
     speed: 500,
     slidesToShow: 1, 
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1800,
+    arrows: false, // Oculta las flechas de navegación
   };
 
   return (

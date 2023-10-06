@@ -1,8 +1,10 @@
 import SearchBar from "../Components/Search";
-import { useSelector, useDispatch } from "react-redux/es/hooks/useSelector";
 import { useState , useEffect } from "react";
 import "./Champs.css"
 import fav from "../lol/Like.png"
+import { getDetail } from "../Components/Redux/Actions";
+import { Link } from "react-router-dom";
+import { useDispatch , useSelector } from "react-redux";
 
 const squareImages = require.context('../lol/square', false, /\.(png)$/);
 const imageMap = squareImages.keys().reduce((acc, key) => {
@@ -16,6 +18,12 @@ function Champs () {
     const all = useSelector((state)=> state.allChamps);
     // const dispatch = useDispatch();
     const Fav = fav
+
+    const dispatch = useDispatch(); 
+
+    const handleDetailClick = (id) => {
+      dispatch(getDetail(id));
+    };
 
     //Paginado:
     const [currentPage, setCurrentPage] = useState(0);
@@ -87,8 +95,10 @@ function Champs () {
             <div className="allChamps">
                 {filteredC.map((e) => (
                     <div className="Card">
+                        <Link to={`/detail/${encodeURI(e.id)}`} onClick={() => handleDetailClick(e.id)}>
                         <p>{e.name}<img src={Fav} alt="Fav" className="Fav"></img></p>
                         <img src={imageMap[e.id]} alt={e.name} className="square"/>
+                        </Link>
                     </div>
                     ))}
             </div>            

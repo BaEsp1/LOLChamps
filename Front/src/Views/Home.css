@@ -1,9 +1,4 @@
 
-/* .Home{
-    background-color: #000000;
-    height: 80em;
-} */
-
 .HowPlay{
     margin: 3% auto;
     color: white;
@@ -81,14 +76,14 @@ margin:auto;
     justify-content: space-between;
 }
 
-.Order a{
+.Order h2{
     font-size: x-large;
     padding: 1%;
     color: blueviolet;
     text-shadow: 1px 0px 20px #9417c3;
 }
 
-.Order a:hover{
+.Order h2:hover{
     font-size: x-large;
     padding: 1%;
     color: rgb(226, 197, 233);

@@ -40,19 +40,25 @@ export function getChamps() {
     };
 };
 
+// Importa axios y otras constantes necesarias
+
 export function getDetail(id) {
-    return async function (dispatch){
+    return async function(dispatch) {
         try {
-            const back = await axios.get( `${URL}/champs/${id}`)
-            return dispatch ({
+            console.log("activo");
+            const back = await axios.get(URL + '/champs/' + id);
+            dispatch({
                 type: GET_DETAIL,
-                payload: back.data
-            })
+                payload: {
+                    detail: [back.data]
+                },
+            });
         } catch (error) {
-            console.log(error)
+            console.error(error);
         }
-    }
-};
+    };
+}
+
 // ==================== FILTRO DE CLASE ================
 
 export const getClass = () => {

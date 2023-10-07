@@ -10,12 +10,15 @@ import Favorites from "./Views/Favorite";
 import Index from "./Components/Index";
 import { useLocation } from "react-router-dom";
 
+
 function App () {
     const location = useLocation();
 
     return (
         <div className='App'>
-            { location.pathname !== "/" && <Index/>}
+            {location.pathname !== "/" && !location.pathname.startsWith("/detail/") && (
+                <Index />
+            )}
         <Routes>
             <Route path='/' element={<Lp/>} name='Lp' key='Lp' />
             <Route path='/home' element={<Home/>} name='home' key='home' />

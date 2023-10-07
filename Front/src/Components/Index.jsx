@@ -32,8 +32,11 @@ const Index = () => {
             <Link to="/maps">Maps</Link>,
             <Link to="/favorites">Favorites</Link>,
         ],
+
     };
 
+
+    
     const navLinks = links[location.pathname] || [];
 
     return (

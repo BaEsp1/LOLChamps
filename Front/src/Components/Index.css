@@ -10,16 +10,15 @@
 
 .Index a{
     text-decoration: none;
-    color:#610094;
+    color: blueviolet;
+    text-shadow: 1px 0px 20px #9417c3;
     font-weight: bold;
-    font-size: larger;
+    font-size: xx-large;
 }
 
 .Index a:hover{
-    text-shadow: 0px 0px 20px #9f55db;
-    /* color:white */
-    font-size: 124%;
-    color:#6f378d;
+    color: rgb(226, 197, 233);
+    text-shadow: 1px 0px 20px #9417c3;
 }
 
 .IndexLeft{

@@ -4,6 +4,9 @@ import {
   GET_ALL_CHAMPS,
   GET_DETAIL,
   GET_CLASS,
+  ADD_FAV,
+  GET_FAV,
+  DEL_FAV
 } from "./ActionsType"
 
 const initialState = {
@@ -11,6 +14,7 @@ const initialState = {
   allChamps:[],
   class:[],
   detail:[],
+  favorites: [],
   };
 
   const rootReducer = (state = initialState, action) => {
@@ -42,6 +46,28 @@ const initialState = {
           ...state,
           detail: action.payload.detail,
         }; 
+      }
+      case GET_FAV:{
+        return {
+          ...state,
+          favorites: action.payload,
+        };
+      }
+      case ADD_FAV:{
+        const existingChamp = state.favorites.find((fav) => fav.id === action.payload.id);
+        if (existingChamp) {
+          return state;
+        } else {
+          return {
+            ...state,
+            favorites: [...state.favorites, action.payload] };
+          }
+      }
+      case DEL_FAV:{
+        return {
+          ...state,
+         favorites: state.favorites.filter((fav) => fav.id !== action.payload),
+        };
       }
     default:
         return state;

@@ -4,6 +4,9 @@ import {
     LOADING,
     READY,
     GET_CLASS,
+    ADD_FAV,
+    GET_FAV,
+    DEL_FAV
 } from "./ActionsType";
 import axios from "axios";
 
@@ -76,3 +79,50 @@ export const getClass = () => {
         }
     }
 };
+
+//==================== Fav's ==========================
+
+export function getfavs(){
+    return async function (dispatch){
+        try {
+            const response = await axios( URL +"/favs/get")
+            return dispatch({
+                type:GET_FAV, 
+                payload: response.data,
+            })
+        } catch (error) {
+            return dispatch({type: "ERROR", payload: error});            
+        }
+    }
+}
+
+export const addFav = (id) => {
+    console.log(id);
+    return async function (dispatch){ 
+            try {
+            const respuestaDelBack = await axios.post( URL +"/favs/create", id)
+            console.log(respuestaDelBack.data);
+            return dispatch({
+                type: ADD_FAV,
+                payload: respuestaDelBack.data,
+                })
+        } catch (error) {
+            return dispatch({type: "ERROR", payload: error});
+        }
+    }
+}
+
+export function delFav (id){
+    return async function (dispatch){
+        try {
+            const response = await axios.delete( URL +"/favs/delete/" + id)
+            console.log( response.data)
+                return dispatch({
+                    type: DEL_FAV,
+                    payload: response.data,
+                })
+        } catch (error) {
+            return dispatch({type: "ERROR", payload: error});
+        }
+        }
+}

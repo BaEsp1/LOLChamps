@@ -1,6 +1,7 @@
 const { Router } = require('express');
 const champsR = require("../Routes/Rchamps")
-const classR = require("../Routes/RClass")
+const classR = require("../Routes/RClass");
+const favsR = require('./Rfav');
 // const  countriesR = require('../routes/countriesR');
 // const  activitiesR  = require('../routes/activitiesR');
 //const {activity , country }  = require ("../db")
@@ -14,5 +15,6 @@ const router = Router();
 // Ejemplo: router.use('/auth', authRouter);
 router.use('/champs', champsR );
 router.use('/class', classR);
+router.use('/favs', favsR);
 
 module.exports = router;

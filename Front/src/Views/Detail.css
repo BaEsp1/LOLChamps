@@ -88,3 +88,34 @@ padding-bottom: 1em;
 .Attacks h1{
     margin: auto;
 }
+
+
+.FavsOff{
+    width: 20px;
+    float: right;
+    padding: 1px;
+    color: white;
+    background: none;
+    border: none;
+    font-size: unset;
+    margin-right: 22%;
+    margin-left: -21%;
+}
+
+
+.FavsOff:active{
+    color: #e73636;
+    text-shadow: 0 0 1px 2px #e78d8d;
+    width: 21px;
+}
+
+.FavsOn{
+    width: 20px;
+    float: right;
+    background: none;
+    border:none;
+    padding: 1px;
+    font-size: x-large;
+    margin-right: 22%;
+    margin-left: -21%;
+}

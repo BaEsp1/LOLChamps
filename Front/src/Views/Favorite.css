@@ -1,0 +1,7 @@
+.CardsFavs{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.3em;
+    width: 95em;
+    margin: auto;
+}

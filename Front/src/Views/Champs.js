@@ -32,7 +32,6 @@ function Champs () {
 
     const lastPage = () => {
         setCurrentPage(all.length - 27);
-        console.log(currentPage);
     };
 
     useEffect(() => {
@@ -42,7 +41,6 @@ function Champs () {
     const filteredC = all.slice(currentPage, currentPage + 27);
 
     let pageActual= Math.floor(currentPage/27+1)
-    
 
     return(
     <div className="Champs">
@@ -77,11 +75,11 @@ function Champs () {
             </div>
             <div className="allChamps">
             {filteredC.map((e) => (
-              <ChampsCards
-              id ={e.id}
-              name={e.name}
-              key ={e.name} />
-              ))}
+                <ChampsCards
+                id ={e.id}
+                name={e.name}
+                key ={e.id} />
+                ))}
             </div>            
 
         </div>

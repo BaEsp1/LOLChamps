@@ -100,7 +100,7 @@ export const addFav = (id) => {
     return async function (dispatch){ 
         console.log(id)
             try {
-            const respuestaDelBack = await axios.post( URL +"/favs/create", id)
+            const respuestaDelBack = await axios.post( URL +"/favs/create", {id:id})
             console.log(respuestaDelBack.data)
             return dispatch({
                 type: ADD_FAV,
@@ -114,9 +114,10 @@ export const addFav = (id) => {
 }
 
 export function delFav (id){
+    console.log( "del", id)
     return async function (dispatch){
         try {
-            const response = await axios.delete( URL +"/favs/delete/"+ id)
+            const response = await axios.delete( URL +`/favs/delete/${id}`)
             console.log( response.data)
                 return dispatch({
                     type: DEL_FAV,

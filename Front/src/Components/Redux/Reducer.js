@@ -62,7 +62,7 @@ const initialState = {
       case DEL_FAV:{
         return {
           ...state,
-         favorites: state.favorites.filter((fav) => fav.id !== action.payload.id),
+         favorites: action.payload,
         };
       }
     default:

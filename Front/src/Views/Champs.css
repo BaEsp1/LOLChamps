@@ -68,7 +68,7 @@
 .Card h3{
 }
 
-.FavOff{
+.Off{
     width: 20px;
     float: right;
     padding: 1px;
@@ -79,13 +79,13 @@
 }
 
 
-.FavOff:active{
+.Off:active{
     color: #e73636;
     text-shadow: 0 0 1px 2px #e78d8d;
     width: 21px;
 }
 
-.FavOn{
+.On{
     width: 20px;
     float: right;
     background: none;

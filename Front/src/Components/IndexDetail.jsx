@@ -9,6 +9,7 @@ const IndexDetail = () => {
     return (
         <div className="Index">
             <div className="IndexLeft">
+            <Link to="/home">Home</Link>
             <Link to="/champs">Champs</Link>
             <Link to="/maps">Maps</Link>
             <Link to="/favorites">Favorites</Link>

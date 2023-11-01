@@ -1,0 +1,52 @@
+.Favs{
+    width: fit-content;
+    background-image: url("../lol/borde.png");
+    background-size: cover;
+    width: 22em;
+    height: 41em;
+    margin: auto;
+}
+
+.Favs a{
+    background-color: #0606068c;
+    display: flex;
+    flex-direction: column;
+    width: 20.6em;
+    height: 36em;
+    margin-top: 2.6em;
+    margin-left: 0.7em;
+    border-radius: 14.6% 14.6% 0 0;
+    text-decoration: none;
+    color: white;
+}
+
+.Favs a:hover{
+    color: blueviolet;
+    text-shadow: 1px 0px 20px #9417c3;
+}
+
+.Favs a img{
+    border-top-right-radius: 1em;
+    border-top-left-radius: 1em;
+    margin-left: 0.5em;
+    height: 36em;
+}
+
+.Favs a h3{
+    background: #000000bd;
+    margin: -0.2em 0.2em;
+    width: 10.1em;
+    font-size: xx-large;
+}
+
+.Favs button {
+    background: none;
+    border: none;
+    /* float: right; */
+    margin: 0 0 0 20em;
+}
+
+.Favs button:hover{
+    font-size: medium;
+    margin: 0 0 0 17em;
+}

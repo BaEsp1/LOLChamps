@@ -42,8 +42,8 @@ const ChampsCards = (props) =>{
       
     return (
         <div className="Card">
-            { isFav ? (<button onClick={handleFavorite}  className="FavOn" >❤️</button>) : (
-                    <button onClick={handleFavorite}  className="FavOff"> ♥ </button>  ) }
+            { isFav ? (<button onClick={handleFavorite}  className="On" >❤️</button>) : (
+                    <button onClick={handleFavorite}  className="Off"> ♥ </button>  ) }
     
             <Link to={`/detail/${encodeURI(props.id)}`} onClick={() => handleDetailClick(props.id)}>
               <h3>{props.name}</h3>

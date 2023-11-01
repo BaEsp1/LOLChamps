@@ -6,6 +6,10 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Line } from 'rc-progress';
 import IndexDetail from "../Components/IndexDetail";
+import { useState , useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { addFav, delFav } from "../Components/Redux/Actions";
+import { useMemo } from "react";
 
 // =================== Img COL1 ========================
 const squareImages = require.context('../lol/loading', false, /\.(jpg)$/);
@@ -24,7 +28,6 @@ function Col2({ championName }) {
   
     const championSkinImages = skinImageFiles
       .filter((filename) => filename.includes(championName))
-      console.log(championSkinImages)
   
       const settings = {
         dots: true,            
@@ -70,9 +73,34 @@ function Col2({ championName }) {
 function Detail (){
 
     const dataDetail = useSelector((state)=>state.detail);
-    const data = Array.isArray(dataDetail) ? dataDetail : [];
-    console.log(dataDetail)
-    console.log(data)
+    const data = useMemo(() => {
+      return Array.isArray(dataDetail) ? dataDetail : [];
+    }, [dataDetail]);
+    
+    //========== Favs: ============
+
+    const [isFav, setIsFav] = useState(false);
+        const dispatch = useDispatch();
+        const listFavorites = useSelector((state) => state.favorites);
+      
+      // console.log(data)
+        useEffect(() => {
+          const favoritesArray = Object.values(listFavorites);
+          const isInFavorites = favoritesArray.some((fav) => fav.id === data[0].id);
+          if (isInFavorites) setIsFav(true);
+        }, [listFavorites, data]);
+      
+        
+        function handleFavorite() {
+          setIsFav((prevIsFav) => !prevIsFav);
+      
+          if (isFav) {
+            console.log(data[0].id)
+            dispatch(delFav(data[0].id));
+          } else {
+            dispatch(addFav(data[0].id));
+          }
+        }
 
     return (
       <div>
@@ -83,9 +111,12 @@ function Detail (){
             <div className="Col1">
              {data.map((c)=>(
                 <div key={c.id}>
-                <h1>{c.name}</h1>
+                <h1>{c.name}
+                {/* ================ Favs ===========*/}
+                  { isFav ? (<button onClick={handleFavorite}  className="FavsOn" >❤️</button>) : (
+                    <button onClick={handleFavorite}  className="FavsOff"> ♥ </button>  ) }
+                    </h1>
                 <h2>{c.title}</h2>
-                {/* <h3>Class : {c.tags}</h3> */}
                 <p>{c.blurb}</p>
                 <img src={imageMap[c.id+"_0"]} alt={c.name}></img>
                 </div>

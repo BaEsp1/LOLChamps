@@ -97,17 +97,18 @@ export function getfavs(){
 }
 
 export const addFav = (id) => {
-    console.log(id);
     return async function (dispatch){ 
+        console.log(id)
             try {
             const respuestaDelBack = await axios.post( URL +"/favs/create", id)
-            console.log(respuestaDelBack.data);
+            console.log(respuestaDelBack.data)
             return dispatch({
                 type: ADD_FAV,
                 payload: respuestaDelBack.data,
                 })
         } catch (error) {
-            return dispatch({type: "ERROR", payload: error});
+            console.log(error);
+            return dispatch({type: "ERRORADD", payload: error});
         }
     }
 }
@@ -115,14 +116,14 @@ export const addFav = (id) => {
 export function delFav (id){
     return async function (dispatch){
         try {
-            const response = await axios.delete( URL +"/favs/delete/" + id)
+            const response = await axios.delete( URL +"/favs/delete/"+ id)
             console.log( response.data)
                 return dispatch({
                     type: DEL_FAV,
                     payload: response.data,
                 })
         } catch (error) {
-            return dispatch({type: "ERROR", payload: error});
+            return dispatch({type: "ERRORDEL", payload: error});
         }
         }
 }

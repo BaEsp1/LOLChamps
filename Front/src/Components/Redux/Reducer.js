@@ -54,19 +54,15 @@ const initialState = {
         };
       }
       case ADD_FAV:{
-        const existingChamp = state.favorites.find((fav) => fav.id === action.payload.id);
-        if (existingChamp) {
-          return state;
-        } else {
           return {
             ...state,
-            favorites: [...state.favorites, action.payload] };
-          }
+            favorites: action.payload,
+          };
       }
       case DEL_FAV:{
         return {
           ...state,
-         favorites: state.favorites.filter((fav) => fav.id !== action.payload),
+         favorites: state.favorites.filter((fav) => fav.id !== action.payload.id),
         };
       }
     default:

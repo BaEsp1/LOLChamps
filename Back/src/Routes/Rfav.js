@@ -1,22 +1,30 @@
-const {Router} = require("express");
+const { Router } = require("express");
 
-let favs = []
+let favs = [];
 
-const favsR = Router ();
+const favsR = Router();
 
-favsR.post("/create", (req , res) =>{
-    favs.push({...req.body})
-    res.status(201).send(favs)
-})
+favsR.post("/create", (req, res) => {
+    const  {id}  = req.body;
+    // Verificar si el ID ya existe en la lista
+    const existingFav = favs.find((f) => f.id == id);
 
-favsR.get("/get",(req, res) =>{
-    return res.json(favs);
-})
+    if (existingFav) {
+        return res.status(200).json(favs,{ message: "ID ya existe en la lista" });
+    } else {
+        favs.push( {id});
+        return res.status(201).json(favs);
+    }
+});
 
-favsR.delete("/delete/:id", (req, res) =>{
-    const {id} = req.params;
-    favs = favs.filter((pj) => pj.id !== Number(id));
-    return res.status(200).json(favs)
-})
+favsR.get("/get", (req, res) => {
+  return res.json(favs);
+});
+
+favsR.delete("/delete/:id", (req, res) => {
+  const  Id  = req.params;
+  favs = favs.filter((fav) => fav.id !== Number(Id));
+  return res.status(200).json(favs);
+});
 
 module.exports = favsR;

@@ -68,16 +68,27 @@
 .Card h3{
 }
 
-.Fav{
+.FavOff{
     width: 20px;
     float: right;
-    background-color: #9fa3a7;
-    border-radius: 1em;
     padding: 1px;
+    color: white;
+    background: none;
+    border: none;
+    font-size: unset;
 }
 
-.Fav:active{
-    background-color: #e73636;
-    box-shadow: 0 0 1px 2px #e78d8d;
+
+.FavOff:active{
+    color: #e73636;
+    text-shadow: 0 0 1px 2px #e78d8d;
     width: 21px;
+}
+
+.FavOn{
+    width: 20px;
+    float: right;
+    background: none;
+    border:none;
+    padding: 1px;
 }

@@ -1,51 +1,13 @@
 // import SearchBar from "../Components/Search";
 import { useState , useEffect } from "react";
 import "./Champs.css"
-import fav from "../lol/Like.png"
-import { delFav, getDetail } from "../Components/Redux/Actions";
-import { Link } from "react-router-dom";
-import { useDispatch , useSelector } from "react-redux";
-import { addFav } from "../Components/Redux/Actions";
-
-const squareImages = require.context('../lol/square', false, /\.(png)$/);
-const imageMap = squareImages.keys().reduce((acc, key) => {
-    const champId = key.replace(/^\.\/(.*)\.png$/, '$1');
-    acc[champId] = squareImages(key);
-    return acc;
-}, {});
-
+// import fav from "../lol/Like.png"
+import { useSelector } from "react-redux";
+import ChampsCards from "../Components/ChampsCards";
 
 function Champs () {
+
     const all = useSelector((state)=> state.allChamps);
-    const listFav = useSelector((state)=>state.favorites)
-    console.log(listFav)
-    const [isFav, setIsFav ] = useState(false);
-    const [clickedChampId, setClickedChampId] = useState(null);
-    // const Fav = fav
-    const dispatch = useDispatch(); 
-
-//Fav's:
-const handleDetailClick = (id) => {
-    setClickedChampId(id);
-    dispatch(getDetail(id));
-  };
-
-  const handleFavClick = (id) => {
-    setClickedChampId(id);  // Actualizamos clickedChampId cuando se hace clic en el botón de favoritos
-    const isChampInFavorites = listFav.some((fav) => fav.id === id);
-    setIsFav(isChampInFavorites);
-
-    if (isChampInFavorites) {
-      dispatch(delFav(id));
-    } else {
-      dispatch(addFav(id));
-    }
-  };
-
-  useEffect(() => {
-    setIsFav(listFav.some((fav) => fav.id === clickedChampId));
-  }, [listFav, clickedChampId]);
-
 
     //Paginado:
     const [currentPage, setCurrentPage] = useState(0);
@@ -77,13 +39,11 @@ const handleDetailClick = (id) => {
         firstPage()
     }, [all]);
     
-    
     const filteredC = all.slice(currentPage, currentPage + 27);
 
     let pageActual= Math.floor(currentPage/27+1)
     
 
-  
     return(
     <div className="Champs">
 
@@ -117,21 +77,11 @@ const handleDetailClick = (id) => {
             </div>
             <div className="allChamps">
             {filteredC.map((e) => (
-          <div className="Card" key={e.id}>
-            {isFav ? (
-              <button onClick={() => handleFavClick(e.id)}>Del</button>
-            ) : (
-              <button onClick={() => handleFavClick(e.id)}>
-                {/* <img src={Fav} alt="Fav" className="Fav" /> */} Aad
-              </button>
-            )}
-
-            <Link to={`/detail/${encodeURI(e.id)}`} onClick={() => handleDetailClick(e.id)}>
-              <h3>{e.name}</h3>
-              <img src={imageMap[e.id]} alt={e.name} className="square" />
-            </Link>
-          </div>
-        ))}
+              <ChampsCards
+              id ={e.id}
+              name={e.name}
+              key ={e.name} />
+              ))}
             </div>            
 
         </div>

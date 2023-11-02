@@ -21,23 +21,17 @@ margin:auto;
     left: 5em;
     top: 10em;
 }
-.HowPlay h1{
-    opacity: 100%;
-}
-.HowPlay p{
-    opacity: 100%;
-}
 
 .Carousel2{
-    width: 42.4%;
-    margin: auto;
+    width: 48.4%;
+    /* margin: auto; */
     font-size: larger;
     font-weight: bold;
 }
 
 .Carousel2 img{
     
-        width: 74%;
+        width: 69%;
         border-radius: 0 50px 0 50px;
         margin:auto;
         box-shadow:0 0 10px 3px rgb(17, 16, 18)
@@ -47,7 +41,8 @@ margin:auto;
 .Order{
     display: flex;
     flex-direction: row;
-    margin-top: 2%;
+    margin: 1em 2em;
+    justify-content: space-around;
 }
 
 .Columna1{
@@ -55,8 +50,8 @@ margin:auto;
     flex-direction: column;
     font-size: larger;
     font-weight: bold;
-    justify-content: space-around;
-    margin:0 1em;
+    gap: 5em;
+    margin: 3em 0 0 0;
 
 }
 
@@ -65,8 +60,8 @@ margin:auto;
     flex-direction: column;
     font-size: larger;
     font-weight: bold;
-    justify-content: space-around;
-    margin:0 1em;
+    gap: 5em;
+    margin: 3em 0 0 0;
 }
 
 .botombutons{
@@ -88,4 +83,37 @@ margin:auto;
     padding: 1%;
     color: rgb(226, 197, 233);
     text-shadow: 1px 0px 20px #9417c3;
+}
+
+.HwP{
+    background: #0606068f;
+    width: 21em;
+    margin:  1em auto;
+    border-radius: 0 20px;
+    box-shadow: 0 0 10px 3px rgb(17, 16, 18);
+    border: 1px solid black;
+}
+
+.HwP h1{
+    font-size: xx-large;
+    margin: 0;
+    color: white;
+}
+
+.HwP p{
+    font-size: smaller;
+    font-style: italic;
+    color: grey;
+}
+
+.back{
+    background: #060606bd;
+    border-radius: 0 20px;
+    box-shadow: 0 0 10px 3px rgb(0 0 0);
+    border: 1px solid black;
+    padding: 0.5em;
+}
+
+.back:hover{
+    box-shadow: 0 0 15px 2px blueviolet;
 }

@@ -44,6 +44,7 @@ import ShadowS from "../lol/Cities/Rv/ShadowS.png";
 import ShuriS from "../lol/Cities/Rv/ShuriS.png";
 import TargonS from "../lol/Cities/Rv/TargonS.png";
 import ZaunS from "../lol/Cities/Rv/ZaunS.png";
+import Footer from "../Components/Footer";
 
 function Maps() {
   const [informacion, setInformacion] = useState(""); // Estado para almacenar la información
@@ -307,6 +308,8 @@ function ocultarDivYBotones() {
 
         </div>
       )}
+      <div className="Foot"><Footer /></div>
+      
     </div>
   );
 }

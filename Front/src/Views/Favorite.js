@@ -1,6 +1,7 @@
 import { useSelector } from "react-redux";
 import FavsCard from "../Components/FavsCard";
 import "./Favorite.css"
+import Footer from "../Components/Footer";
 
 function Favorites () {
 
@@ -17,6 +18,7 @@ function Favorites () {
                     key={e.id} />
                 ))}
             </div>
+            <div><Footer/></div>
         </div>
 
     )

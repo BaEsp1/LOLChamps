@@ -24,16 +24,16 @@ const MyCarousel2 = () => {
   return (
     <Slider {...settings}>
       <div>
-        <img src={Abismo} alt="Imagen 1" />
+        <img src={Abismo} alt="Imagen 1" title="ARAM" />
       </div>
       <div>
-        <img src={Lamentos} alt="Imagen 2" />
+        <img src={Lamentos} alt="Imagen 2" title="Summoner's Rift"/>
       </div>
       <div>
-        <img src={Cristal} alt="Imagen 3" />
+        <img src={Cristal} alt="Imagen 3" title="Crystal" />
       </div>
       <div>
-        <img src={Bosque} alt="Imagen 4" />
+        <img src={Bosque} alt="Imagen 4" title="Twisted Treeline"/>
       </div>
     </Slider>
   );

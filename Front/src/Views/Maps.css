@@ -254,3 +254,10 @@ width: 31%;
     height: 14em;
     box-shadow: 0 0 20px #c9973d; 
 }
+
+.Foot{
+    position: absolute;
+    bottom: -13.7em;
+    width: inherit;
+    left: 0.5em;
+}

@@ -12,11 +12,13 @@ import Grieta3 from "../lol/Gif/grieta3.gif";
 import Bosque1 from "../lol/Gif/Ashe.gif";
 import Bosque2 from "../lol/Gif/Zac.gif";
 import Bosque3 from "../lol/Gif/Braum.gif";
-import Grieta from "../lol/Maps/Abismo.png";
-import Bosque from "../lol/Maps/Bosque.png";
-import Lamentos from "../lol/Maps/Lamentos.png";
+// import Grieta from "../lol/Maps/Abismo.png";
+// import Bosque from "../lol/Maps/Bosque.png";
+// import Lamentos from "../lol/Maps/Lamentos.png";
 import Class from "../lol/class.jpg";
 import { Link } from "react-router-dom";
+import Footer from "../Components/Footer";
+import MyCarousel2 from "../Components/Carrousel/Home-Maps"
 
 function Htp () {
 
@@ -28,24 +30,33 @@ function Htp () {
         <h1>What is "League of Legends"?</h1>
             <p className="Init">League of Legends (LoL), commonly referred to as League, is a 2009 multiplayer online battle arena video game developed and published by Riot Games. Inspired by Defense of the Ancients, a custom map for Warcraft III, Riot's founders sought to develop a stand-alone game in the same genre.</p>
         <br></br>
+
         <div className="data">
         <h2>Gameplay</h2>
             <img src={GIF} alt="gif" className="gifi"></img>
             <p>League of Legends is a multiplayer online battle arena (MOBA) game in which the player controls a character ("champion") with a set of unique abilities from an isometric perspective. As of 2023, there are exactly 165 champions available to play.Over the course of a match, champions gain levels by accruing experience points (XP) through killing enemies.Items can be acquired to increase champions' strength, and are bought with gold, which players accrue passively over time and earn actively by defeating the opposing team's minions,champions, or defensive structures. In the main game mode, Summoner's Rift, items are purchased through a shop menu available to players only when their champion is in the team's base.Each match is discrete; levels and items do not transfer from one match to another.</p>
-            <h3>Maps:</h3>
+            
+            <ul className="content">
+            <h2>Contents:</h2>
+            <h3><li><a href="#Champs">Champs</a></li></h3>
+            <h3><li>Maps</li></h3>
             <div className="Maps">            
-            <ul><li>Summoner's Rift</li>
-                <img src={Grieta} alt="Grieta"/>       
-                <li>ARAM - Howling Abyss</li>
-                <img src={Lamentos} alt="Lamentos"/>        
-                <li>Twisted Treeline</li>
-                <img src={Bosque} alt="Bosque"/>
-               </ul> 
+                    <div className="carouselMaps"><MyCarousel2 /></div>
+                <ul>
+                    <li><a href="#Summor">Summoner's Rift</a>   </li>
+                        
+                    <li><a href="#ARAM">ARAM - Howling Abyss</a> </li>
+                        
+                    <li><a href="#Twisted">Twisted Treeline</a></li>
+                </ul> 
                </div>
+               <h3><li><a href="#References">References</a></li></h3>
+               </ul>
             </div>  
+
         <br></br>
         <div className="data">
-        <h2>Champions</h2>
+        <h2 id="Champs">Champions</h2>
             <p>There are six classifications of LoL champions. A champion can belong to one or more categories, depending on the line you choose to play or the team of items you purchase from the store:</p>
             <ul><li>Assassins: These are champions whose abilities or gameplay possibilities make them special in the task of killing or destabilizing targets with high strategic value. Their characteristics are infiltration, deception and mobility.</li>
             <li>Fighters: These are champions dedicated to close-range and physical damage, with high resistance to receiving damage.</li>
@@ -56,8 +67,9 @@ function Htp () {
             <div className="Clases"> <img src={Class} alt="class"></img></div>
             </div>
             <br></br>
+            
         <div className="data">
-        <h2>Summoner's Rift</h2>
+        <h2 id="Summor">Summoner's Rift</h2>
             <p>Summoner's Rift is the flagship game mode of League of Legends and the most prominent in professional-level play.The mode has a ranked competitive ladder; a matchmaking system determines a player's skill level and generates a starting rank from which they can climb. There are nine tiers; the least skilled are Iron, Bronze, and Silver, and the highest are Master, Grandmaster, and Challenger.</p>
             <img src={Map} alt="Map1"/>
             <p>Two teams of five players compete to destroy the opposing team's "Nexus", which is guarded by the enemy champions and defensive structures known as "turrets". Each team's Nexus is located in their base, where players start the game and reappear after death. Non-player characters known as minions are generated from each team's Nexus and advance towards the enemy base along three lanes guarded by turrets: top, middle, and bottom. Each team's base contains three "inhibitors", one behind the third tower from the center of each lane. Destroying one of the enemy team's inhibitors causes stronger allied minions to spawn in that lane, and allows the attacking team to damage the enemy Nexus and the two turrets guarding it. The regions in between the lanes are collectively known as the "jungle", which is inhabited by "monsters" that, like minions, respawn at regular intervals. Like minions, monsters provide gold and XP when killed. Another, more powerful class of monster resides within the river that separates each team's jungle. These monsters require multiple players to defeat and grant special abilities to their slayers' team. For example, teams can gain a powerful allied unit after killing the Rift Herald, permanent strength boosts by killing dragons, and stronger, more durable minions by killing Baron Nashor.</p>
@@ -75,16 +87,16 @@ function Htp () {
             <li>You cannot buyback (instant revival at the cost of gold).</li>
             <li>Additional buildings removed: only the turrets, Nexus, and inhibitors (or barracks) remain.</li></ul>
             
-            <div className="Game">
-            <img src={Grieta1} alt="gif2" ></img>
-            <img src={Grieta2} alt="gif3" ></img>
-            <img src={Grieta3} alt="gif4" ></img>
-            </div>
+                <div className="Game">
+                    <img src={Grieta1} alt="gif2" ></img>
+                    <img src={Grieta2} alt="gif3" ></img>
+                    <img src={Grieta3} alt="gif4" ></img>
+                </div>
             </div>
             <br></br>
 
-            <div className="data">
-        <h2>ARAM</h2>
+            <div className="data" id="ARAM">
+        <h2 id="ARAM">ARAM</h2>
             <p>ARAM, abbreviation of All Random, All Mid, is a game mode in League of Legends in a 5v5 format on the Howling Abyss icon Howling Abyss, where the objective is to destroy the opposing team's Nexus. The game includes an Reroll All random draft type, and a game that takes place only on one long lane (specifically referencing its resemblance to Summoner's Rift icon Summoner's Rift's middle lane). </p>
 
         <h3>Howling Abyss</h3>
@@ -114,9 +126,9 @@ function Htp () {
             <img src={Aram3} alt="gif7" ></img>
             </div>
             </div>
-        
+            <br></br>
             <div className="data">
-        <h2>Twisted Treeline</h2>
+        <h2 id="Twisted">Twisted Treeline</h2>
         <img src={Map2} alt="Map2"/>
             <p>The Twisted Treeline was a 3v3 Field of Justice that was geared towards quicker gameplay as opposed to that of Summoner's Rift. The general time for games on this map was 20–35 minutes. The map featured a smaller field, with only two lanes and one legendary monster known as Vilemaw.</p>
         <h3>Features</h3>
@@ -133,12 +145,13 @@ function Htp () {
             </div>
             <br></br>
         <hr></hr>
-        <h2>References:</h2>
+        <h2 id="References">References:</h2>
             <ul><a href="https://leagueoflegendsoficial.fandom.com/es/wiki/Wiki_League_of_legends_oficial">
             https://leagueoflegendsoficial.fandom.com/es/wiki/Wiki_League_of_legends_oficial</a></ul>
             <ul><a href="https://es.wikipedia.org/wiki/League_of_Legends">https://es.wikipedia.org/wiki/League_of_Legends</a></ul>
             <ul><a href="https://www.techradar.com/how-to/league-of-legends-a-beginners-guide">https://www.techradar.com/how-to/league-of-legends-a-beginners-guide</a></ul>
         </div>
+        <div><Footer/></div>
         </div>
     )   
 }

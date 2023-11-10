@@ -1,0 +1,35 @@
+.Footer{
+    background-color: #000000c2;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 3.2em;
+    margin-top: 2em;
+}
+
+.Footer h2{
+    color:  rgb(63 34 171 / 75%);
+    font-style: oblique;
+    margin-right: 0.5em;
+}
+
+.Footer a img{
+    height: 27px;
+    border-radius: 50%;
+}
+
+.Footer a img:hover{
+    box-shadow: 0 0 20px 3px rgb(159 85 219);
+}
+
+.Footer a{
+    margin-left: 0.5em;
+    height: 27px;
+}
+
+.port{
+    background-color: white;
+    width: 30px;
+}

@@ -2,13 +2,32 @@
 import { useState , useEffect } from "react";
 import "./Champs.css"
 // import fav from "../lol/Like.png"
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import ChampsCards from "../Components/ChampsCards";
+import { filterChamps, getChamps, getClass, orderChamps } from "../Components/Redux/Actions";
 
 function Champs () {
-
+    
     const all = useSelector((state)=> state.allChamps);
+    const dispatch = useDispatch();
+    const clases = useSelector((state)=>state.class);
+    console.log(clases)
 
+        // FILTRO Y ORDER :
+
+        const handleOrder = (e) => {
+            dispatch(orderChamps(e.target.value))
+        }
+    
+        const handleFilter = (tag) => {
+            if(tag !== "All"){
+                dispatch(filterChamps(tag))
+            }else {
+                dispatch(getChamps())
+                dispatch(getClass())
+            }
+        }
+    
     //Paginado:
     const [currentPage, setCurrentPage] = useState(0);
 
@@ -56,22 +75,23 @@ function Champs () {
         <div className="page">
             <div className="filtros">
                 <h3>Search:</h3>
-                {/* <SearchBar/> */}
+                {/* <input></input> */}
                 <h3>Order:</h3>
-                    <select>
-                        <option>A - Z</option>
-                        <option>Z - A</option>
+                    <select onChange={handleOrder}>
+                        <option value="Asc">A - Z</option>
+                        <option value="Desc">Z - A</option>
                     </select>
 
                 <h3>Filter:</h3>
-                <button>Figther</button>
-                <button>Mage</button>
-                <button>Marksman</button>
-                <button>Support</button>
-                <button>Tank</button>
-                <button>All</button>
+                <button onClick={() =>handleFilter("Fighter")}>Fighter</button>
+                <button onClick={() =>handleFilter("Mage")}>Mage</button>
+                <button onClick={() =>handleFilter("Marksman")}>Marksman</button>
+                <button onClick={() =>handleFilter("Assassin")}>Assassin</button>
+                <button onClick={() =>handleFilter("Support")}>Support</button>
+                <button onClick={() =>handleFilter("Tank")}>Tank</button>
+                <button onClick={() =>handleFilter("All")}>All</button>
 
-                <h3>Stats</h3>
+                {/* <h3>Stats</h3> */}
             </div>
             <div className="allChamps">
             {filteredC.map((e) => (

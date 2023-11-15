@@ -6,7 +6,10 @@ import {
     GET_CLASS,
     ADD_FAV,
     GET_FAV,
-    DEL_FAV
+    DEL_FAV,
+    ORDER,
+    SEARCH,
+    FILTER,
 } from "./ActionsType";
 import axios from "axios";
 
@@ -79,6 +82,30 @@ export const getClass = () => {
         }
     }
 };
+//========= ORDER , SEARCH y FILTRO (/champs)============
+
+export function orderChamps (order){
+        return ({
+            type:ORDER,
+            payload:order,
+        })
+    
+}
+
+export function filterChamps (tag){
+    console.log(tag)
+    return ({type:FILTER,
+            payload:tag,
+        })
+}
+
+
+export function search (text){
+        return ({
+            type:SEARCH,
+            payload:text,
+        })
+}
 
 //==================== Fav's ==========================
 

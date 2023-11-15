@@ -10,10 +10,22 @@ import Favorites from "./Views/Favorite";
 import Index from "./Components/Index";
 import Footer from "./Components/Footer";
 import { useLocation } from "react-router-dom";
+import { getChamps, getClass } from "./Components/Redux/Actions";
+import { useEffect } from 'react';
+import { connect } from 'react-redux';
 
 
-function App () {
+function App ({ getChamps, getClass }) {
     const location = useLocation();
+
+    useEffect(() => {
+        getChamps();
+      }, [getChamps]);
+    
+      useEffect(() => {
+        getClass();
+      }, [getClass]); 
+
 
     return (
         <div>
@@ -37,4 +49,14 @@ function App () {
     )
 }
 
-export default App;
+const mapStateToProps = (state) => ({
+  allChamps: state.allChamps,
+  class: state.class,
+});
+
+const mapDispatchToProps = {
+  getChamps,
+  getClass,
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

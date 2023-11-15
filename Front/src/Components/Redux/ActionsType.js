@@ -10,6 +10,9 @@ const GET_CLASS = "GET_CLASS"; // divide las clases
 const ADD_FAV = "ADD_FAV"; //Agrega a Fav
 const GET_FAV = "GET_FAV"; //mostrar los Favs
 const DEL_FAV = "DEL_FAV"; //los elimina;
+const ORDER = "ORDER"; // ordena los campeones en /Champs
+const SEARCH = "SEARCH"; //Search para champs
+const FILTER = "FILTER"; //Filtra los camp en /Champs
 
 module.exports = {
     LOADING,
@@ -19,5 +22,8 @@ module.exports = {
     GET_CLASS,
     ADD_FAV,
     GET_FAV,
-    DEL_FAV
+    DEL_FAV,
+    ORDER,
+    SEARCH,
+    FILTER
 } ;

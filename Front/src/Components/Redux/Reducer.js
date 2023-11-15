@@ -6,7 +6,10 @@ import {
   GET_CLASS,
   ADD_FAV,
   GET_FAV,
-  DEL_FAV
+  DEL_FAV,
+  ORDER,
+  SEARCH,
+  FILTER,
 } from "./ActionsType"
 
 const initialState = {
@@ -63,6 +66,38 @@ const initialState = {
         return {
           ...state,
          favorites: action.payload,
+        };
+      }
+      case ORDER: {
+        const isDesc = action.payload === 'Desc';
+      
+        const sortedChamps = [...state.allChamps].sort((a, b) => {
+          if (isDesc) {
+            return b.id.localeCompare(a.id);
+          } else {
+            return a.id.localeCompare(b.id);
+          }
+        });
+      
+        return {
+          ...state,
+          allChamps: sortedChamps,
+        };
+      }
+      case FILTER: {
+        let filteredChamps;
+        const filteredClass = state.class[action.payload];
+        filteredChamps = filteredClass ? filteredClass : [];
+          return {
+            ...state,
+              allChamps: filteredChamps,
+          };
+    }
+      case SEARCH: {
+        const search = state.allChamps.filter((champ) => champ.name === action.payload);
+        return {
+          ...state,
+          allChamps: search,
         };
       }
     default:

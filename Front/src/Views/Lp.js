@@ -2,20 +2,9 @@ import React from 'react';
 import Logo from "../Components/Logo";
 import "./Lp.css";
 import MyCarousel from "../Components/Carrousel/Lp-Carrousel";
-import { getChamps, getClass } from "../Components/Redux/Actions";
-import { useEffect } from 'react';
-import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-function Lp({ getChamps, getClass }) {
-
-  useEffect(() => {
-    getChamps();
-  }, [getChamps]);
-
-  useEffect(() => {
-    getClass();
-  }, []); 
+function Lp() {
 
   return (
     <div className="Lp">
@@ -36,14 +25,5 @@ function Lp({ getChamps, getClass }) {
   )
 }
 
-const mapStateToProps = (state) => ({
-  allChamps: state.allChamps,
-  class: state.class,
-});
 
-const mapDispatchToProps = {
-  getChamps,
-  getClass,
-};
-
-export default connect(mapStateToProps, mapDispatchToProps)(Lp);
+export default Lp

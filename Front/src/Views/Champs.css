@@ -53,6 +53,7 @@
     background-color: rgba(0, 0, 0, 0.689);
     border-radius: 0 20px 0 20px;
     padding: 0.5%;
+    height: fit-content;
 }
 
 .square{
@@ -92,4 +93,63 @@
     background: none;
     border:none;
     padding: 1px;
+}
+
+.search{
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
+}
+
+.search input{
+    width: 60%;
+    border-radius: 0 0 0 10px;
+    border: solid white;
+    text-align-last: center;
+    font-family: 'Beaufort';
+    font-weight: 600;
+    font-size: medium;
+    
+}
+
+.search button{
+    width: 15%;
+    margin: 0;
+    background: white;
+    border: none;
+    border-radius: 0 10px 0 0;
+    font-weight: bolder;
+}
+
+.filters button{
+    font-family: 'Beaufort';
+    font-size: medium;
+    font-weight: 550;
+}
+
+.filters button:active{
+    background-color: black;
+    color:white;
+}
+.filters button::before{
+    background-color: black;
+    color:white;
+}
+.filters button:hover{
+    box-shadow:  1px 0px 10px 0px rgb(159 85 219);
+}
+
+.filtros select{
+    border-radius:0 10px; 
+     cursor: pointer;
+     font-family: 'Beaufort';
+         font-weight: 550;
+         font-size: medium;
+}
+
+.filtros select option{
+    border-radius:0 10px;
+    font-family: 'Beaufort';
+    font-weight: 550;
+    font-size: medium;
 }

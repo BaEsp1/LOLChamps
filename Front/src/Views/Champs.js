@@ -4,14 +4,13 @@ import "./Champs.css"
 // import fav from "../lol/Like.png"
 import { useDispatch, useSelector } from "react-redux";
 import ChampsCards from "../Components/ChampsCards";
-import { filterChamps, getChamps, getClass, orderChamps } from "../Components/Redux/Actions";
+import { filterChamps, getChamps, getClass, orderChamps , search} from "../Components/Redux/Actions";
 
 function Champs () {
     
     const all = useSelector((state)=> state.allChamps);
     const dispatch = useDispatch();
-    const clases = useSelector((state)=>state.class);
-    console.log(clases)
+    const [textSearch, setTextSearch] = useState([]);
 
         // FILTRO Y ORDER :
 
@@ -27,7 +26,23 @@ function Champs () {
                 dispatch(getClass())
             }
         }
-    
+        //SEARCH:
+
+        const handleSearch = (text) =>{
+            if(text !== ""){
+            setTextSearch(text)
+            dispatch(search(text))
+            }else{
+                setTextSearch(text)
+                dispatch(getChamps())
+            }
+        }
+
+        const clearSearch = () => {
+            setTextSearch("")
+            dispatch(getChamps());
+          };
+
     //Paginado:
     const [currentPage, setCurrentPage] = useState(0);
 
@@ -75,7 +90,14 @@ function Champs () {
         <div className="page">
             <div className="filtros">
                 <h3>Search:</h3>
-                {/* <input></input> */}
+                <div className="search">
+                    <input type="text" value={textSearch} onChange={(e) => handleSearch(e.target.value)} />
+                    {textSearch 
+                    ? (<button className="clear-search" onClick={clearSearch}>X</button>)
+                    : (<button className="clear-search" disabled> </button>)
+                    }
+                </div>
+
                 <h3>Order:</h3>
                     <select onChange={handleOrder}>
                         <option value="Asc">A - Z</option>
@@ -83,14 +105,15 @@ function Champs () {
                     </select>
 
                 <h3>Filter:</h3>
-                <button onClick={() =>handleFilter("Fighter")}>Fighter</button>
-                <button onClick={() =>handleFilter("Mage")}>Mage</button>
-                <button onClick={() =>handleFilter("Marksman")}>Marksman</button>
-                <button onClick={() =>handleFilter("Assassin")}>Assassin</button>
-                <button onClick={() =>handleFilter("Support")}>Support</button>
-                <button onClick={() =>handleFilter("Tank")}>Tank</button>
-                <button onClick={() =>handleFilter("All")}>All</button>
-
+                <div className="filters">
+                    <button onClick={() =>handleFilter("Fighter")}>Fighter</button>
+                    <button onClick={() =>handleFilter("Mage")}>Mage</button>
+                    <button onClick={() =>handleFilter("Marksman")}>Marksman</button>
+                    <button onClick={() =>handleFilter("Assassin")}>Assassin</button>
+                    <button onClick={() =>handleFilter("Support")}>Support</button>
+                    <button onClick={() =>handleFilter("Tank")}>Tank</button>
+                    <button onClick={() =>handleFilter("All")}>All</button>
+                </div>
                 {/* <h3>Stats</h3> */}
             </div>
             <div className="allChamps">

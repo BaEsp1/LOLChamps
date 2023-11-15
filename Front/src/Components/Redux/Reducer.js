@@ -94,10 +94,13 @@ const initialState = {
           };
     }
       case SEARCH: {
-        const search = state.allChamps.filter((champ) => champ.name === action.payload);
+        const searchTerm = action.payload.toLowerCase(); 
+        const searchResults = state.allChamps.filter((champ) => {
+            return champ.name.toLowerCase().includes(searchTerm);
+          });
         return {
           ...state,
-          allChamps: search,
+          allChamps: searchResults,
         };
       }
     default:

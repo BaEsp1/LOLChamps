@@ -8,6 +8,8 @@
 .detail h1{
     color: blueviolet;
     text-shadow: 1px 0px 20px #9417c3;
+    width: 125%;
+    margin-left: -1em;
 }
 
 .detail h1:hover {
@@ -99,7 +101,7 @@ padding-bottom: 1em;
     border: none;
     font-size: unset;
     margin-right: 22%;
-    margin-left: -21%;
+    margin-left: -15%;
 }
 
 

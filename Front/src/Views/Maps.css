@@ -49,7 +49,7 @@
     border: none;
     position: absolute;
     left: 33.2em;
-    bottom: -1.7em;
+    bottom: -1em;
 }
 
 .Targon img{
@@ -86,7 +86,7 @@
     border: none;
     position: absolute;
     left: 48.8em;
-    bottom: -0.4em;
+    bottom: 0.3em;
 }
 .Shurima img{
     width: 30%;
@@ -103,7 +103,7 @@
     border: none;
     position: absolute;
     right: 25.2em;
-    bottom: -2.2em;
+    bottom: -1.4em;
 }
 
 .Shadow img{
@@ -121,7 +121,7 @@
     border: none;
     position: absolute;
     right: 34em;
-    bottom: 31.5em;
+    bottom: 32.2em;
 }
 .Ionia img{
 width: 31%;
@@ -137,7 +137,7 @@ width: 31%;
     border: none;
     position: absolute;
     right: 51.9em;
-    bottom: 15.4em;
+    bottom: 16.1em;
 }
 .Piltover img{
     width: 29%;
@@ -154,7 +154,7 @@ width: 31%;
     border: none;
     position: absolute;
     right: 52.89em;
-    bottom: 10.7em;
+    bottom: 11.4em;
 }
 .Zaun img{
     width: 31%;
@@ -170,7 +170,7 @@ width: 31%;
     border: none;
     position: absolute;
     right: 33em;
-    bottom: 8.7em;
+    bottom: 9.6em;
 }
 
 .Bilgewater img{
@@ -188,7 +188,7 @@ width: 31%;
     border: none;
     position: absolute;
     right: 47.7em;
-    bottom: 0.7em;
+    bottom: 1.5em;
 }
 
 .Ixtal img{

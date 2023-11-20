@@ -1,3 +1,4 @@
+import Swal from "sweetalert2";
 import {
   LOADING,
   READY,
@@ -13,7 +14,7 @@ import {
 } from "./ActionsType"
 
 const initialState = {
-  display: false,
+  loading: false,
   allChamps:[],
   class:[],
   detail:[],
@@ -25,12 +26,12 @@ const initialState = {
       case LOADING:
       return {
         ...state,
-        display: true,
+        loading: true,
       };
     case READY:
       return {
         ...state,
-        display: false,
+        loading: false,
       };
       case GET_ALL_CHAMPS: {
         return {
@@ -93,16 +94,26 @@ const initialState = {
               allChamps: filteredChamps,
           };
     }
-      case SEARCH: {
-        const searchTerm = action.payload.toLowerCase(); 
-        const searchResults = state.allChamps.filter((champ) => {
-            return champ.name.toLowerCase().includes(searchTerm);
-          });
+    case SEARCH: {
+      const searchTerm = action.payload.toLowerCase(); 
+      const searchResults = state.allChamps.filter((champ) => {
+        return champ.name.toLowerCase().includes(searchTerm);
+      });
+    
+      if (searchResults.length === 0) {
+        Swal.fire({
+          icon: "error",
+          title: "Oops... Champion not found",
+          text: "Try Again!",
+        });
+        return state;
+      } else {
         return {
           ...state,
           allChamps: searchResults,
         };
       }
+    }
     default:
         return state;
     }

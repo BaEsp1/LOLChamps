@@ -42,7 +42,6 @@ const LoadImageMap = LoadImages.keys().reduce((acc, key) => {
   
       return (
           <div className="Favs">
-      
               <Link to={`/detail/${encodeURI(props.id)}`} onClick={() => handleDetailClick(props.id)}>
                 <img src={LoadImageMap[props.id+"_0"]} alt={props.id} className="Loading"></img>
                 <h3>{props.id}</h3>

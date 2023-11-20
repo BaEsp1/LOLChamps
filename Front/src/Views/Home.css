@@ -117,3 +117,11 @@ margin:auto;
 .back:hover{
     box-shadow: 0 0 15px 2px blueviolet;
 }
+
+.load img{
+        width: 88em;
+        height: 37em;
+        position: absolute;
+        left: 6em;
+        top: 10em;
+}

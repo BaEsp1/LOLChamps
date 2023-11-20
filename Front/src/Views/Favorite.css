@@ -4,4 +4,13 @@
     gap: 2.3em;
     width: 95em;
     margin: auto;
+    height: max-content;
+}
+
+.NoFavs{
+    height: 30em;
+}
+
+.NoFavs h3{
+    color:blueviolet;
 }

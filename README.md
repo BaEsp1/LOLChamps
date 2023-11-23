@@ -5,6 +5,7 @@ At the same time, the Runeterra Map can be viewed, with the corresponding subdiv
 Each champion will have their biography, along with a detailed description of their attacks and their origin.
 You can also find a list of favorites, where you will find those that we have previously given ♥
 <span>![</span><span>Aquí la descripción de la imagen por si no carga</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png</span><span>)</span>
+![Hola](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/Champs.png)
 ⚛️💻​ ​The technologies used
 
 🌍Front-end🌍:

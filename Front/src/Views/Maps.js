@@ -54,6 +54,7 @@ import Noxus from "../Components/Carrousel/region/noxus";
 import Piltover from "../Components/Carrousel/region/piltover";
 import Shadow from "../Components/Carrousel/region/shadow";
 import Shurima from "../Components/Carrousel/region/shurima";
+import Targon from "../Components/Carrousel/region/targon";
 
 function Maps() {
   const [informacion, setInformacion] = useState(""); // Estado para almacenar la información
@@ -100,7 +101,7 @@ function ocultarDivYBotones() {
       imagenes: [ Targon1, Targon2,Targon3],      
       titulo: "TARGON",
       subtitulo: "SPRAWLING WESTERN MOUNTAINS",
-      carr:"carrousel de frejord",
+      carr: <Targon/> ,
     },
     Noxus: {
         texto: "Noxus is a powerful empire with a fearsome reputation. To those beyond its borders, it is brutal, expansionist, and threatening, yet those who look past its warlike exterior see an unusually inclusive society, where the strengths and talents of its people are respected and cultivated. The Noxii were once fierce barbarian tribes, until they stormed the ancient city that now lies at the heart of their domain. Under threat from all sides, they aggressively took the fight to their enemies, pushing their borders outward with each passing year. This struggle for survival has made modern Noxians a deeply proud people who value strength above all—though that strength can manifest in many different forms. Anyone can rise to a position of power and respect within Noxus if they display the necessary aptitude, regardless of social standing, background, homeland, or wealth. Those who are able to wield magic are held in particularly high esteem, and are actively sought out in order that their special talents may be honed and best harnessed for the benefit of the empire. But in spite of this meritocratic ideal, the old noble houses still wield considerable power… and some fear that the greatest threat to Noxus comes not from its enemies, but from within.",

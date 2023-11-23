@@ -5,36 +5,40 @@ At the same time, the Runeterra Map can be viewed, with the corresponding subdiv
 Each champion will have their biography, along with a detailed description of their attacks and their origin.
 You can also find a list of favorites, where you will find those that we have previously given ♥
 
+
 ![LP](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/LP.png)
 
-⚛️💻​ ​The technologies used
+To begin, perform: <br/>
+In the /Front path and later in the /Back : "/npm install"<br/>
+Later,in the same routes for the app to start: "/npm start"<br/>
+<br/>
+greetings!
 
-🌍Front-end🌍:
-<ul><li>JS</li>  
-<li>​CSS</li>
-<li>​HTML</li>
-<li>​React</li>
-<li>​Redux</li>
-</ul>
-<br></br>
-​🌎​​Back-end​🌎:
-<ul>
-  <li>​Express</li>
-  <li>​Sequelize</li>
-</ul>
-<br></br>
-🌏BD🌏:
-<ul>
-<li>SQL</li>
-<li>PostgreSQL</li>
-</ul>
-<br></br>
-Deploy ⏩Vercel
+
+## ⚛️💻​ ​The technologies used
+
+### 🌍Front-end🌍: 
+  <ul><li>JS</li>    
+  <li>​CSS</li>       
+  <li>​HTML</li>
+  <li>​React</li>
+  <li>​Redux</li></ul>
+  
+### 🌎​​Back-end​🌎:
+  <ul><li>​Express</li>
+    <li>​Sequelize</li></ul>
+
+### 🌏BD🌏:
+  <ul><li>SQL</li>
+  <li>PostgreSQL</li>
+  </ul>
+
+### Deploy ⏩Vercel
 
 # Developed:
 <ul> ⏩ Baesp01 </ul>
-<li>Port-foil:</li>
-<li>Linkedind:</li>
+<li>Port-foil: https://baesp1.github.io/ </li>
+<li>Linkedind: https://www.linkedin.com/in/baesp/ </li>
 
 # Screens 
 /Home
@@ -61,25 +65,19 @@ Tambien se podrá encontrar una lista de favoritos, donde se encontrarán aquell
 ## ⚛️💻 Las tecnologías utilizadas:
 
 ### 🌍Front-end🌍:
-<ul><li>JS</li>  
-<li>​CSS</li>
-<li>​HTML</li>
-<li>​React</li>
-<li>​Redux</li>
-</ul>
-<br></br>
-
+  <ul><li>JS</li>  
+  <li>​CSS</li>
+  <li>​HTML</li>
+  <li>​React</li>
+  <li>​Redux</li></ul>
+  
 ### 🌎​​Back-end​🌎:
-<ul>
-  <li>​Express</li>
-  <li>​Sequelize</li>
-</ul>
-<br></br>
+  <ul><li>​Express</li>
+    <li>​Sequelize</li></ul>
 
 ### 🌏BD🌏:
-<ul>
-<li>SQL</li>
-<li>PostgreSQL</li>
-</ul>
-<br></br>
-Deploy ⏩Vercel
+  <ul><li>SQL</li>
+  <li>PostgreSQL</li>
+  </ul>
+
+### Deploy ⏩Vercel

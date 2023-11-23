@@ -51,6 +51,7 @@ import Freljord from "../Components/Carrousel/region/freljord";
 import Ionia from "../Components/Carrousel/region/ionia";
 import Ixtal from "../Components/Carrousel/region/ixtal";
 import Noxus from "../Components/Carrousel/region/noxus";
+import Piltover from "../Components/Carrousel/region/piltover";
 
 function Maps() {
   const [informacion, setInformacion] = useState(""); // Estado para almacenar la información
@@ -132,7 +133,7 @@ function ocultarDivYBotones() {
         imagenes: [ Pil1, Pil2, Pil3],
         titulo: "PILTOVER",
         subtitulo: "THRIVING COASTAL CITY",
-        carr:"carrousel de Piltover",
+        carr:<Piltover/>,
       },
     Zaun: {
         texto: "Zaun is a large, undercity district, lying in the deep canyons and valleys threading Piltover. What light reaches below is filtered through fumes leaking from the tangles of corroded pipework and reflected from the stained glass of its industrial architecture. Zaun and Piltover were once united, but are now separate, yet symbiotic societies. Though it exists in perpetual smogged twilight, Zaun thrives, its people vibrant and its culture rich. Piltover’s wealth has allowed Zaun to develop in tandem; a dark mirror of the city above. Many of the goods coming to Piltover find their way into Zaun’s black markets, and hextech inventors who find the restrictions placed upon them in the city above too restrictive often find their dangerous researches welcomed in Zaun. Unfettered development of volatile technologies and reckless industry has rendered whole swathes of Zaun polluted and dangerous. Streams of toxic runoff stagnate in the city’s lower reaches, but even here people find a way to exist and prosper.",

@@ -208,7 +208,7 @@ width: 31%;
     box-shadow: 0 0 18px #5c450d;
     border: solid #745729;
     border-radius: 0 20px 0 20px;
-    height: 41em;
+    height: 43em;
 }
 
 .info p{
@@ -244,12 +244,12 @@ width: 31%;
 
 .info div div div{}
 
-.slick-slider {
+.info .slick-slider {
     margin: auto;
     width: 44em;
 }
 
-.stick-list{
+.info .stick-list{
     margin: auto;
     width: 35em;
 }

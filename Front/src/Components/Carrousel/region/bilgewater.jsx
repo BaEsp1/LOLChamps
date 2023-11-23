@@ -14,7 +14,6 @@ import Nautilus from "../../../lol/square/Nautilus.png";
 import Pyke from "../../../lol/square/Pyke.png";
 import TahmKench from "../../../lol/square/TahmKench.png";
 import TwistedFate from "../../../lol/square/TwistedFate.png";
-import "./region.css"
 import { useDispatch } from 'react-redux';
 import { getDetail } from '../../Redux/Actions';
 import { Link } from 'react-router-dom';

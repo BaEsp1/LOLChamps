@@ -4,8 +4,9 @@ In which you can see their different classifications, filters can be made on the
 At the same time, the Runeterra Map can be viewed, with the corresponding subdivision of the original towns of each champion.
 Each champion will have their biography, along with a detailed description of their attacks and their origin.
 You can also find a list of favorites, where you will find those that we have previously given ♥
-<span>![</span><span>Aquí la descripción de la imagen por si no carga</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png</span><span>)</span>
-![Hola](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/Champs.png)
+
+![LP](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/LP.png)
+
 ⚛️💻​ ​The technologies used
 
 🌍Front-end🌍:
@@ -36,6 +37,14 @@ Deploy ⏩Vercel
 <li>Linkedind:</li>
 
 # Screens 
+
+![Home](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/Home.png)
+![HP](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/HP.png)
+![Champs](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/Champs.png)
+![Det](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/Detail.png)
+![Map](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/Map.png)
+![Favs](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/Favs.png)
+
 
 # Descripcion - (Español)
 Este proyecto se basa en la creacion de una web, cuya tematica principal son los campiones o personajes, del juego League of Legends (LOL). 

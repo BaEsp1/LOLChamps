@@ -49,6 +49,7 @@ import Bilgewater from "../Components/Carrousel/region/bilgewater";
 import Demacia from "../Components/Carrousel/region/demacia";
 import Freljord from "../Components/Carrousel/region/freljord";
 import Ionia from "../Components/Carrousel/region/ionia";
+import Ixtal from "../Components/Carrousel/region/ixtal";
 
 function Maps() {
   const [informacion, setInformacion] = useState(""); // Estado para almacenar la información
@@ -151,7 +152,7 @@ function ocultarDivYBotones() {
         imagenes: [Ix1,Ix2, Ix3],
         titulo: "IXTAL",
         subtitulo:"PERILOUS EASTERN JUNGLES",
-        carr:"carrousel de Ixtal",
+        carr:<Ixtal/>,
       }
      
 

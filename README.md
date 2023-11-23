@@ -38,7 +38,7 @@ greetings!
 # Developed:
 <ul> ⏩ Baesp01 </ul>
 <li>Port-foil: https://baesp1.github.io/ </li>
-<li>Linkedind: https://www.linkedin.com/in/baesp/ </li>
+<li>LinkedIn: https://www.linkedin.com/in/baesp/ </li>
 
 # Screens 
 /Home

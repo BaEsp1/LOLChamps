@@ -37,12 +37,17 @@ Deploy ⏩Vercel
 <li>Linkedind:</li>
 
 # Screens 
-
+/Home
 ![Home](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/Home.png)
+/HP
 ![HP](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/HP.png)
+/Champs
 ![Champs](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/Champs.png)
+/Detail
 ![Det](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/Detail.png)
+/Map
 ![Map](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/Map.png)
+/Favorites
 ![Favs](https://github.com/BaEsp1/LOLChamps/blob/main/Screenshots/Favs.png)
 
 

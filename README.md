@@ -53,9 +53,9 @@ A su vez se podrá visualizar el Mapa de Runaterra, con la subdivision correspon
 Cada campeon tendra su biografia, junto a una descripcion detallada de sus ataques y su origen.
 Tambien se podrá encontrar una lista de favoritos, donde se encontrarán aquellos que previamente hayamos dado ♥
 
-⚛️💻 Las tecnologías utilizadas:
+## ⚛️💻 Las tecnologías utilizadas:
 
-🌍Front-end🌍:
+### 🌍Front-end🌍:
 <ul><li>JS</li>  
 <li>​CSS</li>
 <li>​HTML</li>
@@ -63,13 +63,15 @@ Tambien se podrá encontrar una lista de favoritos, donde se encontrarán aquell
 <li>​Redux</li>
 </ul>
 <br></br>
-​🌎​​Back-end​🌎:
+
+### 🌎​​Back-end​🌎:
 <ul>
   <li>​Express</li>
   <li>​Sequelize</li>
 </ul>
 <br></br>
-🌏BD🌏:
+
+### 🌏BD🌏:
 <ul>
 <li>SQL</li>
 <li>PostgreSQL</li>

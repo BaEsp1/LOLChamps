@@ -4,9 +4,7 @@ In which you can see their different classifications, filters can be made on the
 At the same time, the Runeterra Map can be viewed, with the corresponding subdivision of the original towns of each champion.
 Each champion will have their biography, along with a detailed description of their attacks and their origin.
 You can also find a list of favorites, where you will find those that we have previously given ♥
-
-#IMG 
-
+<span>![</span><span>Aquí la descripción de la imagen por si no carga</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/parzibyte/WaterPy/master/assets/ImagenV1.png</span><span>)</span>
 ⚛️💻​ ​The technologies used
 
 🌍Front-end🌍:
@@ -36,6 +34,7 @@ Deploy ⏩Vercel
 <li>Port-foil:</li>
 <li>Linkedind:</li>
 
+# Screens 
 
 # Descripcion - (Español)
 Este proyecto se basa en la creacion de una web, cuya tematica principal son los campiones o personajes, del juego League of Legends (LOL). 
@@ -43,9 +42,6 @@ En la cual se podran ver las diferentes clasificaciones de los mismos, se podran
 A su vez se podrá visualizar el Mapa de Runaterra, con la subdivision correspondiente de los pueblos originarios de cada campeon.
 Cada campeon tendra su biografia, junto a una descripcion detallada de sus ataques y su origen.
 Tambien se podrá encontrar una lista de favoritos, donde se encontrarán aquellos que previamente hayamos dado ♥
-
-#IMG 
-
 
 ⚛️💻 Las tecnologías utilizadas:
 

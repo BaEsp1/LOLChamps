@@ -208,6 +208,7 @@ width: 31%;
     box-shadow: 0 0 18px #5c450d;
     border: solid #745729;
     border-radius: 0 20px 0 20px;
+    height: 41em;
 }
 
 .info p{
@@ -241,7 +242,18 @@ width: 31%;
     box-shadow: 0 0 14px #c9973d;
 }
 
-.info img{
+.info div div div{}
+
+.slick-slider {
+    margin: auto;
+    width: 44em;
+}
+
+.stick-list{
+    margin: auto;
+    width: 35em;
+}
+.imagenes img{
     width: 20em;
     height: 13em;
     border-radius: 0 20px 0 20px;
@@ -249,7 +261,7 @@ width: 31%;
     margin: auto 1% 1%;
 }
 
-.info img:hover{
+.imagenes img:hover{
     width: 21em;
     height: 14em;
     box-shadow: 0 0 20px #c9973d; 

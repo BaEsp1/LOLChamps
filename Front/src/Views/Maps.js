@@ -45,6 +45,7 @@ import ShuriS from "../lol/Cities/Rv/ShuriS.png";
 import TargonS from "../lol/Cities/Rv/TargonS.png";
 import ZaunS from "../lol/Cities/Rv/ZaunS.png";
 import Footer from "../Components/Footer";
+import Bilgewater from "../Components/Carrousel/region/bilgewater";
 
 function Maps() {
   const [informacion, setInformacion] = useState(""); // Estado para almacenar la información
@@ -84,7 +85,7 @@ function ocultarDivYBotones() {
       imagenes:  [ Demacia1, Demacia2, Demacia3],
       titulo: "DEMACIA",
       subtitulo: "PROUD MILITARY KINGDOM",
-      carr:"carrousel de frejord",
+      carr:"carrousel de Demacia",
     },
     Targon: {
       texto: "Mount Targon is the mightiest peak in Runeterra, a towering peak of sun-baked rock amid a range of summits unmatched in scale anywhere else in the world. Located far from civilization, Mount Targon is utterly remote and all but impossible to reach save by the most determined seeker. Many legends cling to Mount Targon, and, like any place of myth, it is a beacon to dreamers, madmen and questors of adventure. Some of these brave souls attempt to scale the impossible mountain, perhaps seeking wisdom or enlightenment, perhaps chasing glory or some soul-deep yearning to witness its summit. The ascent is all but impossible, and those hardy few who somehow survive to reach the top almost never speak of what they have seen. Some return with a haunted, empty look in their eyes, others changed beyond all recognition, imbued by an Aspect of unearthly, inhuman power with a destiny few mortals can comprehend.",
@@ -140,7 +141,7 @@ function ocultarDivYBotones() {
         imagenes: [Bil1, Bil2, Bil3],
         titulo: "BILGEWATER",
         subtitulo: "LAWLESS PORT CITY",
-        carr:"carrousel de Bilgewater",
+        carr:<Bilgewater/>,
       },
       Ixtal:{
         texto:"Renowned for its mastery of elemental magic, Ixtal was one of the first independent nations to join the Shuriman empire. In truth, Ixtali culture is much older—part of the great westward diaspora that gave rise to civilizations including the Buhru, magnificent Helia, and the ascetics of Targon—and it is likely they played a significant role in the creation of the first Ascended. But the mages of Ixtal survived the Void, and later the Darkin, by distancing themselves from their neighbors, drawing the wilderness around them like a shield. While much had already been lost, they were committed to the preservation of what little remained… Now, secluded deep in the jungle for thousands of years, the sophisticated arcology-city of Ixaocan remains mostly free of outside influence. Having witnessed from afar the ruination of the Blessed Isles and the Rune Wars that followed, the Ixtali view all the other factions of Runeterra as upstarts and pretenders, and use their powerful magic to keep any intruders at bay.",

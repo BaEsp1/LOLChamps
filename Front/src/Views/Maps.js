@@ -48,6 +48,7 @@ import Footer from "../Components/Footer";
 import Bilgewater from "../Components/Carrousel/region/bilgewater";
 import Demacia from "../Components/Carrousel/region/demacia";
 import Freljord from "../Components/Carrousel/region/freljord";
+import Ionia from "../Components/Carrousel/region/ionia";
 
 function Maps() {
   const [informacion, setInformacion] = useState(""); // Estado para almacenar la información
@@ -122,7 +123,7 @@ function ocultarDivYBotones() {
         imagenes: [Io1, Io2,Io3],
         titulo: "Ionia",
         subtitulo: "THE FIRST LANDS",
-        carr:"carrousel de Ionia",
+        carr:<Ionia/>,
       },
     Piltover: {
         texto: "Piltover is a thriving, progressive city whose power and influence is on the rise. It is Valoran’s cultural center, where art, craftsmanship, trade and innovation walk hand in hand. Its power comes not through military might, but the engines of commerce and forward thinking. Situated on the cliffs above the district of Zaun and overlooking the ocean, fleets of ships pass through its titanic sea-gates, bringing goods from all over the world. The wealth this generates has given rise to an unprecedented boom in the city’s growth. Piltover has - and still is - reinventing itself as a city where fortunes can be made and dreams can be lived. Burgeoning merchant clans fund development in the most incredible endeavors: grand artistic follies, esoteric hextech research, and architectural monuments to their power. With ever more inventors delving into the emergent lore of hextech, Piltover has become a lodestone for the most skilled craftsmen the world over.",

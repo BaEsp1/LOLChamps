@@ -33,3 +33,12 @@
     background-color: white;
     width: 30px;
 }
+
+@media only screen and (max-width: 767px){
+    .Footer h2{
+        font-size:large ;
+    }
+    .Footer h1{
+        font-size:x-large ;
+    }
+}

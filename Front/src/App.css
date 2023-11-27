@@ -4,3 +4,9 @@
     /* /* width: 99em; */
     height: 50em;
   }
+
+  @media only screen and (max-width: 767px){
+    .App{
+      height: 36em;
+    }
+  }

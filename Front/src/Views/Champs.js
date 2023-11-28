@@ -5,6 +5,7 @@ import "./Champs.css"
 import { useDispatch, useSelector } from "react-redux";
 import ChampsCards from "../Components/ChampsCards";
 import { filterChamps, getChamps, getClass, orderChamps , search} from "../Components/Redux/Actions";
+import Footer from "../Components/Footer";
 
 function Champs () {
     
@@ -126,7 +127,7 @@ function Champs () {
             </div>            
 
         </div>
-
+        <Footer/>
     </div>
     )
 }

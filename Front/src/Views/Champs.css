@@ -154,3 +154,43 @@
     font-weight: 550;
     font-size: medium;
 }
+
+@media only screen and (max-width: 767px){
+    .page{
+        flex-direction: column;
+    }
+    .filtros{
+        flex-direction: row;
+        justify-content: space-around;
+        width: fit-content;
+        margin: auto;
+    }
+    .filtros h3{
+        display: none;
+    }
+    .search{
+        height: 10%;
+        width: fit-content;
+        margin: 0;
+    }
+    .filtros select{
+        height: 10%;
+        width: fit-content;
+        margin-left: -0.5em;
+
+    }
+    .filters{
+        display: flex;
+        width: 58%;
+        flex-wrap: wrap;
+        gap: 0.03em;
+    }
+    .filters button{
+        width: fit-content;
+        font-size: small;
+    }
+    .allChamps{
+    width: 100%;
+    gap: 1em;
+    }
+}

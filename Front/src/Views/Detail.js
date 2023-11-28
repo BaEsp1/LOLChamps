@@ -189,7 +189,8 @@ function Detail (){
             ))}
             </div>
         </div>)}
-   <Footer/></div>
+    <Footer/>
+  </div>
     )
 }
 

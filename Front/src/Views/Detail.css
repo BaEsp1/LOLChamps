@@ -121,3 +121,27 @@ padding-bottom: 1em;
     margin-right: 22%;
     margin-left: -21%;
 }
+
+@media only screen and (max-width: 767px){
+    .detail{
+        flex-direction: column;
+    }
+    .Col1{
+        width:fit-content ;
+        margin: auto;
+    }
+    .Col2{
+        width: 99%;
+        margin: auto;
+    }
+    .Col2 .slick-list img {
+        width: 90%;
+    }
+    .Col3{
+        width: 94%;
+    margin: auto;
+    }
+    .Attacks h1{
+        margin: auto;
+}
+}

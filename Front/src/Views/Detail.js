@@ -10,6 +10,7 @@ import { addFav, delFav ,loading, ready} from "../Components/Redux/Actions";
 import gif from "../lol/Gif/Poro.gif"
 import gif2 from "../lol/Gif/Poro2.gif"
 import gif3 from "../lol/Gif/Poro3.gif"
+import Footer from "../Components/Footer";
 
 // ========== Img COL1 ==================
 const squareImages = require.context('../lol/loading', false, /\.(jpg)$/);
@@ -188,7 +189,7 @@ function Detail (){
             ))}
             </div>
         </div>)}
-  </div>
+   <Footer/></div>
     )
 }
 

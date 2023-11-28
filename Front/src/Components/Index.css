@@ -32,3 +32,19 @@
     justify-content: space-evenly;
     width: 33%;
 }
+
+@media only screen and (max-width: 767px){
+    .Index{
+        height: 4em;
+    }
+    .Index a{
+        font-size: 1.1em;
+    }
+    .IndexLeft{
+    width: 43%;
+    }
+    .IndexRight{
+    width: 39%;
+    margin-left: -4em;
+    }
+}

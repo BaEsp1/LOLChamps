@@ -7,6 +7,6 @@
 
   @media only screen and (max-width: 767px){
     .App{
-      height: 36em;
+      width: fit-content;
     }
   }

@@ -125,3 +125,45 @@ margin:auto;
         left: 6em;
         top: 10em;
 }
+
+@media only screen and (max-width: 767px){
+    .Order{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    }
+    .Columna1{
+        gap: 1em;
+        margin: 1em 1em 0;
+    }
+    .back{
+        width: fit-content;
+        margin: 0em 1em;    
+    }
+    .back h2{
+        margin: 0;
+    }
+    .HwP{
+        margin: 1em auto;
+    }
+    .Resp{
+        display: none;
+    }
+    .botombutons{
+        flex-direction: column;
+        margin: 0.3em 1em;
+    }
+    .Columna3{
+    gap: 1em;
+    margin: 1em;
+    }
+    .load img{
+        width: 90%;
+        height: 26em;
+        margin: 0em;
+        position: relative;
+        left: 0em;
+        top: 5em;
+    }
+
+}

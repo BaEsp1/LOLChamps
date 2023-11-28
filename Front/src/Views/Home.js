@@ -6,6 +6,7 @@ import {TanksC, MagesC , AssasC, SuppC, MarkC, FigthC} from "../Components/Carro
 import { useDispatch, useSelector } from 'react-redux';
 import { loading, ready } from '../Components/Redux/Actions';
 import gif from "../lol/Gif/loader.gif"
+import Footer from "../Components/Footer";
 
 function Home() {
 
@@ -26,7 +27,7 @@ function Home() {
 
   return <div>
       { isLoading 
-        ? (<div className="load"><img src={loderGif} alt="gif carga"/></div>) 
+        ? (<div className="load"><img src={loderGif} alt="gif carga"/><br></br><Footer/></div>) 
         : (<div className="Home">
         <div className="Order">
             <div className="Columna1">
@@ -48,7 +49,7 @@ function Home() {
                     <p>League of Legends is a team-based strategy game where two teams of five powerful champions face off to destroy the other’s base.</p>
                     </Link>
                 </div>
-                <MyCarousel2 />
+                <div className="Resp"><MyCarousel2 /></div>
                 <br></br>
                 <div className="botombutons">
                     <div className="back">
@@ -76,6 +77,7 @@ function Home() {
             </div>
 
         </div>
+        <Footer/>
         </div>)
         }
     </div>

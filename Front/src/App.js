@@ -8,7 +8,6 @@ import Champs from "./Views/Champs";
 import Detail from "./Views/Detail";
 import Favorites from "./Views/Favorite";
 import Index from "./Components/Index";
-import Footer from "./Components/Footer";
 import { useLocation } from "react-router-dom";
 import { getChamps, getClass } from "./Components/Redux/Actions";
 import { useEffect } from 'react';
@@ -28,7 +27,6 @@ function App ({ getChamps, getClass }) {
 
 
     return (
-        <div>
         <div className='App'>
             {location.pathname !== "/" && !location.pathname.startsWith("/detail/") && (
                 <Index />
@@ -43,9 +41,7 @@ function App ({ getChamps, getClass }) {
             <Route path='/favorites' element={<Favorites/>} name='favorites' key='favorites' />
         </Routes>
         </div>
-        {location.pathname !== "/maps" && location.pathname !== "/howToPlay" && location.pathname !== "/favorites" ? <Footer/>:""}
-        
-        </div>
+
     )
 }
 

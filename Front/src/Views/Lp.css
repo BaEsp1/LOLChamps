@@ -16,25 +16,6 @@
     height: 8em;
 }
 
-@media only screen and (max-width: 767px) {
-    .Title{
-        height: 4em;
-    }
-    .Title h1{
-        font-size: large;
-    }
-    .Enter{
-        padding: 1em;
-    }
-    .Enter a{
-        padding: 0.3em;
-        font-size: large;
-    }
-    .CarMax767{
-
-    }
-}
-
 .Carousel{
     width: 97%;
     margin: auto;
@@ -77,4 +58,20 @@
 .Enter a:hover{
     color:white;
     font-size: 104%;
+}
+
+@media only screen and (max-width: 767px) {
+    .Title{
+        height: 4em;
+    }
+    .Title h1{
+        font-size: large;
+    }
+    .Enter{
+        padding: 1em;
+    }
+    .Enter a{
+        padding: 0.3em;
+        font-size: large;
+    }
 }

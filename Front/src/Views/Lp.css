@@ -60,7 +60,7 @@
     font-size: 104%;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 767px){
     .Title{
         height: 4em;
     }
@@ -68,10 +68,15 @@
         font-size: large;
     }
     .Enter{
-        padding: 1em;
+        padding: 0.1em 1em;
+        box-shadow:0 0 20px 3px rgb(159 85 219);
+        margin: 1em 0;
     }
     .Enter a{
-        padding: 0.3em;
-        font-size: large;
+            padding: 0.3em;
+            font-size: smaller;
+            color: #f8d1ff;
+            font-family: 'Beaufort';
+            vertical-align: top;
     }
 }

@@ -27,7 +27,7 @@ function Home() {
 
   return <div>
       { isLoading 
-        ? (<div className="load"><img src={loderGif} alt="gif carga"/><br></br><Footer/></div>) 
+        ? (<div className="load"><img src={loderGif} alt="gif carga"/></div>) 
         : (<div className="Home">
         <div className="Order">
             <div className="Columna1">

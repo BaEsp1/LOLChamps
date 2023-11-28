@@ -163,3 +163,49 @@ hr{
 .content h3 li{
 color:rgb(59 1 90);
 }
+
+@media only screen and (max-width: 767px){
+    .HowToPlay h1{
+        font-size: x-large;
+    }
+    .HowToPlay h2{
+        font-size: larger;
+    }
+    .Init{
+        background-image: none;
+        background-color: #4d0c896e;
+        padding: 1em;
+        height: fit-content;
+        width: -webkit-fill-available;
+        margin: auto;
+    }
+    .BackHome{
+        top: 36%;
+        left: 35%;
+        position: fixed;
+    }
+    .HowToPlay img{
+        width: 47%;
+    }
+    .HowToPlay p{
+        padding: 0 0.7em;
+    }
+    .HowToPlay li{
+        margin: auto;
+        padding-right: 1.1em;
+    }
+    .content h3{
+        font-size: medium;
+    }
+    .Maps ul{
+        width: -webkit-fill-available;
+        margin-left: 2em;
+    }
+    .carouselMaps{
+        display: none;
+    }
+    .Clases img{
+        height: 3.7em;
+        width: auto;
+    }
+}

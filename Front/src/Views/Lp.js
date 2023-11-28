@@ -3,6 +3,7 @@ import Logo from "../Components/Logo";
 import "./Lp.css";
 import MyCarousel from "../Components/Carrousel/Lp-Carrousel";
 import { Link } from 'react-router-dom';
+import Footer from '../Components/Footer';
 
 function Lp() {
 
@@ -21,6 +22,9 @@ function Lp() {
       <div className="Carousel">
         <MyCarousel />
       </div>
+      <br></br>
+      <br></br>
+      <Footer/>
     </div>
   )
 }

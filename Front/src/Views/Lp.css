@@ -62,15 +62,15 @@
 
 @media only screen and (max-width: 767px){
     .Title{
-        height: 4em;
+        height: 8em;
     }
     .Title h1{
         font-size: large;
     }
     .Enter{
-        padding: 0.1em 1em;
+        padding: 0.7em 1em;
         box-shadow:0 0 20px 3px rgb(159 85 219);
-        margin: 1em 0;
+        margin: 2em 0;
     }
     .Enter a{
             padding: 0.3em;
@@ -78,5 +78,8 @@
             color: #f8d1ff;
             font-family: 'Beaufort';
             vertical-align: top;
+    }
+    .Carousel{
+        width: auto;
     }
 }

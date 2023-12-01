@@ -169,6 +169,7 @@ function ocultarDivYBotones() {
       {/* Botones */}
       {mostrarBotones && (
         <div className="Buttons">
+          <h2 className="RespMaps">Regions:</h2>
             {/* ------------Frijol ----------- */}
             
           <button id="Freljord" onClick={() => mostrarDivYBotones(
@@ -180,6 +181,7 @@ function ocultarDivYBotones() {
               )}
               className="Freljord">
                 <img src={FreS} alt="Freljord"/>
+                <p className="RespMaps">Freljord</p>
           </button>
              {/* -----------------Demacia -----------------*/}
           <button id="Demacia" onClick={() => mostrarDivYBotones(
@@ -191,6 +193,7 @@ function ocultarDivYBotones() {
               )}
               className="Demacia">
                 <img src={DemaciaS} alt="Demacia"/>
+                <p className="RespMaps">Demacia</p>
           </button>
         {/* -----------------Targon -----------------*/}
             <button id="Targon" onClick={() => mostrarDivYBotones(
@@ -202,6 +205,7 @@ function ocultarDivYBotones() {
               )}
               className="Targon">
                 <img src={TargonS} alt="Targon"/>
+                <p className="RespMaps">Targon</p>
           </button>
                  {/* -----------------Noxus -----------------*/}
                  <button id="Noxus" onClick={() => mostrarDivYBotones(
@@ -213,6 +217,7 @@ function ocultarDivYBotones() {
               )}
               className="Noxus">
                 <img src={NoxusS} alt="Noxus"/>
+                <p className="RespMaps">Noxus</p>
           </button>
             {/* -----------------Shurima -----------------*/}
             <button id="Shurima" onClick={() => mostrarDivYBotones(
@@ -224,6 +229,7 @@ function ocultarDivYBotones() {
               )}
               className="Shurima">
                 <img src={ShuriS} alt="Shurima"/>
+                <p className="RespMaps">Shurima</p>
           </button>
             {/* -----------------Shadow -----------------*/}
                 <button id="Shadow" onClick={() => mostrarDivYBotones(
@@ -235,6 +241,7 @@ function ocultarDivYBotones() {
               )}
               className="Shadow">
                 <img src={ShadowS} alt="Shadow"/>
+                <p className="RespMaps">Shadow</p>
           </button>
         {/* -----------------Ionia -----------------*/}
         <button id="Ionia" onClick={() => mostrarDivYBotones(
@@ -246,6 +253,7 @@ function ocultarDivYBotones() {
               )}
               className="Ionia">
                 <img src={IoniaS} alt="Ionia"/>
+                <p className="RespMaps">Ionia</p>
           </button>
          {/* -----------------Piltover -----------------*/}
          <button id="Piltover" onClick={() => mostrarDivYBotones(
@@ -257,6 +265,7 @@ function ocultarDivYBotones() {
               )}
               className="Piltover">
                 <img src={piltoverS} alt="Piltover"/>
+                <p className="RespMaps">Piltover</p>
           </button>
                    {/* -----------------Bilgewater -----------------*/}
          <button id="Bilgewater" onClick={() => mostrarDivYBotones(
@@ -268,6 +277,7 @@ function ocultarDivYBotones() {
               )}
               className="Bilgewater">
                 <img src={BilgeS} alt="Bilgewater"/>
+                <p className="RespMaps">Bilgewater</p>
           </button>
                    {/* -----------------Zaun -----------------*/}
          <button id="Zaun" onClick={() => mostrarDivYBotones(
@@ -278,7 +288,8 @@ function ocultarDivYBotones() {
                 informacionBotones.Zaun.carr,
               )}
               className="Zaun">
-                <img src={ZaunS} alt="Piltover"/>
+                <img src={ZaunS} alt="Zaun"/>
+                <p className="RespMaps">Zaun</p>
           </button>
          {/* -----------------Ixtal -----------------*/}
          <button id="Ixtal" onClick={() => mostrarDivYBotones(
@@ -290,6 +301,7 @@ function ocultarDivYBotones() {
               )}
               className="Ixtal">
                 <img src={IxtalS} alt="Ixtal"/>
+                <p className="RespMaps">Ixtal</p>
           </button>
 
         </div>

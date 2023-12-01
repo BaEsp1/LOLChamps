@@ -242,7 +242,6 @@ width: 31%;
     box-shadow: 0 0 14px #c9973d;
 }
 
-.info div div div{}
 
 .info .slick-slider {
     margin: auto;
@@ -272,4 +271,66 @@ width: 31%;
     bottom: -13.7em;
     width: inherit;
     left: 0.5em;
+}
+
+.RespMaps{
+    display: none;
+}
+
+@media only screen and (max-width: 1584px) {
+    .Mapss{
+        background-image: url("../lol/mapResp.png");
+        height: fit-content;
+    }
+    .Buttons{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: fit-content;
+    align-items: center;
+    }
+    .RespMaps{
+        display: block;
+    }
+    .Freljord, .Demacia,.Targon, .Noxus,.Shurima ,.Shadow, .Ionia,.Piltover , .Zaun,.Bilgewater,.Ixtal{
+        position: initial;
+        display: flex;
+        color: #ffd88e;
+        align-items: center;
+        font-weight: bolder;
+        font-size: larger;
+        font-family: 'Beaufort';
+        text-shadow: -3px -1px 12px #ffffffa1;
+        align-self: self-start;
+        background-color: #000000bf;
+        border-radius: 0 20px;
+        border: solid 2px black;
+        height: 3.5em;
+        margin-bottom: 0.3em;
+    }
+    .info{
+        height: fit-content;
+    }
+    .info p{
+        font-size: smaller
+    }
+    .imagenes img{
+        width: 13em;
+        height: 7em;
+    }
+    .info .slick-slider {
+        margin: auto;
+        width: 20em;
+    }
+    
+    .info .stick-list{
+        margin: auto;
+        width: 20em;
+    }
+    .info .stick-list img{
+    width: 80%;
+    }
+    .Foot{
+        position: initial;
+    }
 }

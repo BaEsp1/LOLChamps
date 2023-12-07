@@ -1,4 +1,0 @@
-[build]
-  command = "npm install && npm start"
-  functions = "src/App.js"
-  publish = "."

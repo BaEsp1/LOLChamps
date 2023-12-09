@@ -22,7 +22,7 @@ async function getData() {
       await Champ.bulkCreate(apiChamps);
       console.log('BD created');
     } catch (error) {
-      console.error('Error fetching or processing data:', error.message);
+      console.error('Error fetching or processing data:', error);
     }
   }
 

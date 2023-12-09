@@ -16,15 +16,13 @@ async function getData() {
       };
     });
 
-    await Champ.sync({ force: true }); // Esto eliminará y recreará la tabla Champ
+
     await Champ.bulkCreate(apiChamps);
     console.log('BD created');
   } catch (error) {
     console.error('Error fetching or processing data:', error.message);
   }
 
-  const updatedChamps = await Champ.findAll();
-  return updatedChamps;
 }
 
 module.exports = { getData };

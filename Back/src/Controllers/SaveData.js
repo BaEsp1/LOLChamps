@@ -3,7 +3,7 @@ const { Champ } = require('../db');
 const axios = require('axios');
 
 async function getData() {
-  const allChamps = await Champ.findAll();
+  const allChamps = Champ.findAll();
 
   if (!allChamps.length) {
       const apiResponse = await axios.get('http://ddragon.leagueoflegends.com/cdn/12.6.1/data/en_US/champion.json');

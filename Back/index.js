@@ -7,11 +7,11 @@ const port = process.env.PORT || 3001;
 console.log('Iniciando la aplicación');
 conn.sync()
   .then(() => {
-    console.log('Base de datos sincronizada');
     server.listen(3001, async () => {
       console.log('Servidor ON');
       getData();
     });
+    console.log('Base de datos sincronizada');
   })
   .catch((error) => {
     console.error('Error sincronizando la base de datos:', error);

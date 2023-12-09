@@ -4,10 +4,15 @@ const {getData} = require('./src/Controllers/SaveData.js');
 const port = process.env.PORT || 3001;
 
 // Syncing all the models at once.
-conn.sync({ force: true})
+console.log('Iniciando la aplicación');
+conn.sync()
   .then(() => {
-    server.listen(port , async () => {
-            getData();
-          }
-        );
+    console.log('Base de datos sincronizada');
+    server.listen(3001, async () => {
+      console.log('Servidor ON');
+      getData();
+    });
+  })
+  .catch((error) => {
+    console.error('Error sincronizando la base de datos:', error);
   });

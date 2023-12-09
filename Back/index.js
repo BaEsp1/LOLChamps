@@ -7,7 +7,6 @@ const port = process.env.PORT || 3001;
 conn.sync({ force: true})
   .then(() => {
     server.listen(port , async () => {
-      console.log("Servidor ON")
             getData();
           }
         );

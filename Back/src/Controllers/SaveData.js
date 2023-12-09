@@ -21,7 +21,6 @@ async function getData() {
 
       await Champ.bulkCreate(apiChamps);
       console.log('BD created');
-      alert("cargué")
     } catch (error) {
       console.error('Error fetching or processing data:', error.message);
     }

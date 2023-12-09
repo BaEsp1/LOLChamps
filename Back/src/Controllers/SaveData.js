@@ -1,3 +1,4 @@
+const { get } = require('superagent');
 const { Champ } = require('../db');
 const axios = require('axios');
 
